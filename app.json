@@ -1,0 +1,21 @@
+{
+  "name": "THF Radio - Gatsby Template",
+  "description": "Gatsby Template for THF Radio in Berlin",
+  "keywords": [
+    "berlin",
+    "contentful",
+    "gatsby",
+    "static",
+    "ssg"
+  ],
+  "repository": "https://github.com/contentful-userland/gatsby-contentful-starter",
+  "success_url": "/",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-static"
+    }
+  ]
+}

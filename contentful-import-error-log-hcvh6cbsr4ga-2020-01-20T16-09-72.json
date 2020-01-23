@@ -1,0 +1,15 @@
+[
+  {
+    "ts": "2020-01-20T15:09:49.560Z",
+    "level": "error",
+    "error": {
+      "originalError": {
+      },
+      "stacktrace": [
+        "Error: Error: Please make sure the destination space have the same default locale as the source Default locale for source space : en-US Default locale for destination space: de ",
+        "/home/nextlevelshit/Coding/contentful-starter/node_modules/contentful-batch-libs/dist/listr.js:24:27",
+        "<anonymous>"
+      ]
+    }
+  }
+]
