@@ -17,7 +17,7 @@ const TeasersChild = ({
   hasBackground = false
 }) => {
   return (
-    <section className={`teaser-child ${hasBackground ? "--has-background" : ""}`} id={uid} key={uid}>
+    <section className={`teaser-child ${hasBackground ? "--has-background" : ""}`} id={uid}>
       <div className={`container ${hasTextRight ? "--has-text-right" : ""}`}>
         <div className="teaser-child__column">
           <Headline title={headline} sub={subheadline}></Headline>

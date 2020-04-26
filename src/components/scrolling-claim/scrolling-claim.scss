@@ -1,13 +1,12 @@
 .scrolling-claim {
-
   @apply mb-48;
 
   @screen lg {
-    @apply mb-0;
+    @apply mb-0 flex;
   }
   
   .container {
-    @apply flex flex-col items-center justify-center;
+    @apply flex flex-col items-center;
 
     @screen lg {
       @apply flex-row items-start;
@@ -18,7 +17,7 @@
     @apply text-5xl items-start;
 
     @screen lg {
-      @apply mr-6;
+      @apply mr-3;
     }
 
     &.--hide-on-mobile {

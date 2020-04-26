@@ -3,10 +3,7 @@ import { useTransition, animated } from "react-spring"
 
 import "./text-scroller.scss"
 
-// Duration between text scroll events
-const DURATION = 2000
-
-const TextScroller = ({ text = [] }) => {
+export const TextScroller = ({ text = [], duration = 2000 }) => {
   const [index, set] = useState(0)
 
   const textElements = text.map(t => {
@@ -46,7 +43,7 @@ const TextScroller = ({ text = [] }) => {
 
   // Enable interval for rotating text blocks
   useEffect(() => {
-    const interval = setInterval(changeState, DURATION)
+    const interval = setInterval(changeState, duration)
 
     return () => {
       clearInterval(interval)
@@ -56,7 +53,7 @@ const TextScroller = ({ text = [] }) => {
   return (
     // eslint-disable-next-line
     <button className="text-scroller" onClick={changeState} role="presentation">
-      {transitions.map(({ item, props, key }) => {
+      {transitions && transitions.map(({ item, props, key }) => {
         const Text = textElements[item]
 
         return <Text key={key} style={props} />

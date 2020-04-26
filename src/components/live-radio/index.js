@@ -11,12 +11,15 @@ import "./live-radio.scss"
 
 export const LiveRadio = () => {  
   const dispatch = useContext(GlobalDispatchContext)
-  const { archivePlays } = useContext(GlobalStateContext)
+  const { archivePlays, isPlaying } = useContext(GlobalStateContext)
   const player = useRef(null)
 
   if (archivePlays && player.current) {
     player.current.audio.current.pause()
   }
+  if (isPlaying && player.current) {
+    console.log(player.current.audio.current)
+  } 
 
   return (
     <AudioPlayer

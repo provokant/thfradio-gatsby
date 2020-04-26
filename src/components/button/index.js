@@ -3,9 +3,9 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import "./button.scss"
 
-const Button = ({ title = "", children }) => {
+export const Button = ({ title = "", children, onClick }) => {
   return (
-    <button className="cta" title={title}>
+    <button className="cta" title={title} onClick={onClick}>
       <div className="cta__button">
         {children}
       </div>
@@ -13,7 +13,7 @@ const Button = ({ title = "", children }) => {
   )
 }
 
-const ButtonLink = ({ path, title = "", children }) => {
+export const ButtonLink = ({ path, title = "", children }) => {
   return (
     <AnchorLink className="cta" to={path} title={title}>
       <div className="cta__button">
@@ -23,4 +23,4 @@ const ButtonLink = ({ path, title = "", children }) => {
   )
 }
 
-export default { Button, ButtonLink }
+export default Button

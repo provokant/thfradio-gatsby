@@ -13,11 +13,19 @@
     }
   }
 
+  &.--large {
+    @apply text-lg;
+
+    @screen lg {
+      @apply text-xl;
+    }
+  }
+
   &.--narrow {
     @apply mx-auto;
 
     @screen lg {
-      @apply mx-0 w-5/6;
+      @apply mx-0 w-2/3;
     }
   }
 }

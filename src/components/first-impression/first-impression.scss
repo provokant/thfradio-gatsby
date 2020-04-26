@@ -7,8 +7,21 @@
     @apply mt-20 mb-24 text-center;
   }
 
+  &__claim {
+    @apply mb-8 text-center;
+
+    @screen lg {
+      @apply text-left mb-0;
+    }
+  }
+
+  &__paragraph {
+    @apply font-mono;
+  }
+
   &::before {
     background-blend-mode: screen;
+    opacity: 0.2 !important;
 
     @apply bg-secondary-700;
   }
