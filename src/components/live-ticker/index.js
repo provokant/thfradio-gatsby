@@ -31,7 +31,7 @@ export const LiveTicker = () => {
 
   return (
     <div className="live-ticker">
-      <Marquee direction="left" childMargin="0" delay="0">
+      <Marquee direction="left">
         <span dangerouslySetInnerHTML={{ __html: message }} />
       </Marquee>
     </div>

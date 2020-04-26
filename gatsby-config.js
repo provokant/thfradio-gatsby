@@ -22,8 +22,10 @@ const plugins = [
   { 
     resolve: `gatsby-plugin-purgecss`,
     options: {
+      develop: true,
       printRejected: true,
       tailwind: true,
+      purgeOnly : [`/components/`, `/styles/index.scss`]
     }
   },
   `gatsby-plugin-react-helmet`,
