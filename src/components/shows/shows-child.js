@@ -1,11 +1,12 @@
-import React, { useContext } from "react"
+import React, { useContext, useState } from "react"
 import Img from "gatsby-image"
 import { navigate } from "gatsby"
 import moment from "moment"
+import PlayCircle from "../../images/play-circle.svg"
 
 import {
   GlobalDispatchContext,
-  // GlobalStateContext,
+  GlobalStateContext,
 } from "../../context/global-context-provider"
 
 import "./shows.scss"
@@ -20,11 +21,24 @@ const ShowsChild = ({
   url,
 }) => {
   const dispatch = useContext(GlobalDispatchContext)
-  // const { isLiveRadioPaused } = useContext(GlobalStateContext)
+  const [isPlaying, set] = useState(false)
+  
+  const { archivePlays } = useContext(GlobalStateContext)
+
+  if (isPlaying && archivePlays && archivePlays !== slug) {
+    set(state => false)
+  }                                                                             
 
   const toggleShow = (payload) => {
+    // Toggle global dispatcher
     dispatch({ type: "TOGGLE_ARCHIVE_PLAYER", payload })
-
+    // Toggle isPlaying state
+    set(state => !state)
+    // Remove focus if not playing
+    if(isPlaying) {
+      document.activeElement.blur()
+    }
+    // Fallback if footer widget not working
     if (!window.Mixcloud) {
       console.log("test")
       navigate(url)
@@ -32,9 +46,14 @@ const ShowsChild = ({
   }
 
   return (
-    <button className="shows-child" role="play" data-mixcloud-play-button={link}onClick={() => toggleShow(slug)}>
+    <button className={`shows-child ${isPlaying && "--active"}`} role="play" data-mixcloud-play-button={link} onClick={() => toggleShow(slug)}>
       <div className="shows-child__cover">
-        {pictures && <Img fluid={pictures.childImageSharp.fluid} />}
+        <div className="shows-child__cover__image">
+          {pictures && <Img fluid={pictures.childImageSharp.fluid} />}
+        </div>
+        <div className="shows-child__cover__icon">
+          <PlayCircle />
+        </div>
       </div>
       <div className="shows-child__content">
         <div className="shows-child__content__title">{name}</div>

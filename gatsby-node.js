@@ -51,8 +51,6 @@ exports.sourceNodes = async ({
       }
     }
 
-    console.log(nodeData)
-
     createNode(nodeData)
   })
 }

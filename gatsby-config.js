@@ -48,6 +48,14 @@ const plugins = [
     },
   },
   {
+    resolve: `gatsby-plugin-react-svg`,
+    options: {
+      rule: {
+        include: `${__dirname}/src/images/`,
+      }
+    }
+  },
+  {
     resolve: `gatsby-plugin-manifest`,
     options: manifestConfig,
   },
