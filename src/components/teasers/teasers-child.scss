@@ -15,10 +15,10 @@
   }
 
   &.--has-background {
-    @apply bg-aquamarine-100;
+    @apply bg-primary-100;
 
     .headline__sub {
-      @apply text-magenta-600;
+      @apply text-primary-600;
     }
   }
 

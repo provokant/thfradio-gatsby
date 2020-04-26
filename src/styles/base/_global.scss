@@ -10,7 +10,7 @@ body {
 
 main {
   &.--dark {
-    @apply bg-gray-900 text-pink-100;
+    @apply bg-gray-900 text-secondary-100;
   }
 }
 

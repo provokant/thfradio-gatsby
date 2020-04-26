@@ -1,8 +1,8 @@
 .accordion {
-  @apply bg-linen-500;
+  @apply bg-primary-500;
 
   &.--inverted {
-    @apply text-white bg-indigo-500;
+    @apply text-white bg-primary-500;
 
     .accordion {
 
@@ -65,7 +65,7 @@
             h-8
             m-4
 
-            bg-watermelon-500
+            bg-gray-500
             rounded-sm
             
             transform 

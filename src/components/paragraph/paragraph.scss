@@ -1,5 +1,5 @@
 .paragraph {
-  @apply text-center mb-4 opacity-70 text-base;
+  @apply text-center mb-4 opacity-70 text-base font-light;
 
   @screen lg {
     @apply text-left text-lg;

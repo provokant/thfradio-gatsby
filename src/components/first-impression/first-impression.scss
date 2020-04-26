@@ -10,7 +10,7 @@
   &::before {
     background-blend-mode: screen;
 
-    @apply bg-pink-700;
+    @apply bg-secondary-700;
   }
 }
 
@@ -19,7 +19,7 @@
   .first-impression.first-impression {
 
     &::before {
-      @apply bg-aquamarine-800 opacity-60;
+      @apply bg-primary-800 opacity-60;
     }
   }
 }

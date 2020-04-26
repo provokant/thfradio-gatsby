@@ -8,20 +8,20 @@
 
       rounded-sm
       bg-white 
-      text-pink-600
+      text-secondary-600
       font-medium
       border
-      border-pink-300
+      border-secondary-300
       shadow-md
       
       duration-150;
 
     &:hover {
-      @apply bg-aquamarine-100 text-aquamarine-700 border-aquamarine-200 shadow-sm;
+      @apply bg-primary-100 text-primary-700 border-primary-200 shadow-sm;
     }
 
     &:active {
-      @apply bg-violet-100 text-violet-700 border-violet-200 shadow-none;
+      @apply bg-secondary-100 text-secondary-700 border-secondary-200 shadow-none;
     }
   }
 }
