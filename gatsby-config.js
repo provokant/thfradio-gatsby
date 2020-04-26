@@ -25,6 +25,7 @@ const plugins = [
       develop: true,
       printRejected: true,
       tailwind: true,
+      ignore: [`/components/live-radio/`],
       purgeOnly : [`/components/`, `/styles/index.scss`]
     }
   },
