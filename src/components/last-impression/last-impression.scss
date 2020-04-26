@@ -1,0 +1,15 @@
+.last-impression {
+  @apply relative transform translate-y-16 z-10 py-0;
+
+  @screen lg {
+    @apply translate-y-20;
+  }
+
+  &__claim {
+    @apply mb-48;
+
+    @screen lg {
+      @apply mb-32;
+    }
+  }
+}

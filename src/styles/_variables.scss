@@ -1,0 +1,28 @@
+
+:root {
+  // #UTILITIES
+  // ----------------------------------------------------------------
+  --app-height:                 100vh;
+
+  // ----------------------------------------------------------------
+  // #COLORS
+  // --color-primary-lighter:        theme('colors.primary.200');
+  // --color-primary-light:          theme('colors.primary.300');
+  // --color-primary:                theme('colors.primary.600');
+  // --color-primary-darker:         theme('colors.primary.900');
+  
+  // --color-secondary:              theme('colors.secondary.200');
+  // --color-secondary-lighter:      theme('colors.secondary.100');
+  // --color-secondary-darker:       theme('colors.secondary.700');
+
+  --color-white:                  theme('colors.white');
+
+  --color-text:                   theme('colors.black');
+
+  // ----------------------------------------------------------------
+  // #ANIMATIONS & #TRANSITIONS
+  --transition-duration:          320ms;
+  --transition-delay:             160ms;
+  --transition-timing-function:   ease-in-out;
+  // --transition-timing-function:   cubic-bezier(.86 ,0, .32, 1);
+}

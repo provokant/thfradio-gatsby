@@ -1,0 +1,36 @@
+.teaser-child {
+
+  &__column {
+    @apply w-full;
+
+    @screen lg {
+      @apply w-1/2;
+    }
+
+    .headline {
+      @screen lg {
+        @apply w-3/4;
+      }
+    }
+  }
+
+  &.--has-background {
+    @apply bg-aquamarine-100;
+
+    .headline__sub {
+      @apply text-magenta-600;
+    }
+  }
+
+  .container {
+    @apply flex flex-col;
+
+    @screen lg {
+      @apply flex-row;
+
+      &.--has-text-right {
+        @apply flex-row-reverse;
+      }
+    }
+  }
+}

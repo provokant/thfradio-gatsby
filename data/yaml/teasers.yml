@@ -1,0 +1,25 @@
+- uid: about-us
+  headline: THF Radio ist ein Experimentierraum und Sprachrohr für euch.
+  subheadline: Was steckt dahinter?
+  copytext: | 
+    THF Radio ist die Radiostation im ehemaligen Pförtnerinnenhaus am Flughafen Tempelhof. Experimentierraum und Sprachrohr für Bürger*innen, Künstler*innen, Musiker*innen, Kreative und Initiativen. Wir sind Teil des <a href="">TORHAUSES</a> am Flughafen Tempelhof.
+  imageSrc: undraw_science_fqhl.png
+  imageAlt: THF Radio als Experimentierraum
+- uid: why
+  headline: Wir nutzen Leerstand zu euren Gunsten.
+  subheadline: Warum macht ihr das?
+  copytext: |
+    Aktuell steht ein Großteil des 300.000 m² großen Gebäudekomplexes – Europas größtes Baudenkmal – leer. Das wollen wir ändern: Der ehemalige Flughafen hat das Potential, zum sozialen und kulturellen Zentrum in der Stadt zu werden. Als Initiativestehen wir im direkten Kontakt mit der Gebäudeverwaltung Tempelhof Projekt GmbH und politischen Entscheidungsträger*innen. Wir sind außerdem mit vielen Mieter*innen im Gebäude vernetzt.
+  imageSrc: undraw_journey_lwlj.png
+  imageAlt: Leerstehender Flughafen Tempelhof
+  hasTextRight: true
+  hasBackground: false
+- uid: forum
+  headline: Ein freies und offenes Forum für euch alle
+  subheadline: Für wen ist THF Radio?
+  copytext: |
+    THF Radio ist als experimentelles Forum gedacht: Wir wollen den Flughafen und seine Geschichte thematisieren und Künstler*innen in der Stadt eine Plattform geben.
+  imageSrc: undraw_play_time_7k7b.png
+  imageAlt: Person die Sachen macht ...
+  
+

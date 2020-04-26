@@ -1,0 +1,25 @@
+.first-impression {
+  min-height: 80vh;
+
+  @apply flex flex-col justify-center mb-12;
+
+  &__button {
+    @apply mt-20 mb-24 text-center;
+  }
+
+  &::before {
+    background-blend-mode: screen;
+
+    @apply bg-pink-700;
+  }
+}
+
+.--dark {
+  
+  .first-impression.first-impression {
+
+    &::before {
+      @apply bg-aquamarine-800 opacity-60;
+    }
+  }
+}

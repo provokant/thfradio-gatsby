@@ -1,0 +1,34 @@
+- uid: functions
+  headline: Schau, was du mit Webro alles machen kannst.
+  subheadline: Entdecke die unterschiedlichen Funktionalitäten von Webro.
+  items:
+    - title: Co-Browsing & Surfing-Support
+      copytext: Zeig’ in einer Webro-Session deinem Gast deine Website und präsentiere in Echtzeit wichtige Detail-Seiten. Unterstütze beim Erkunden deiner Leistungen oder Produkte, kläre Fragen direkt und biete Live-Hilfestellung an, z.B. beim Ausfüllen von Web-Formularen.
+      imagePath: 02-keyfeatures/04-co-browsing-surfing-support.png
+    - title: Video-Chat & Echtzeit-Demos
+      copytext: Webro fängt bei deiner Website an und geht bei deiner Smartphone-Kamera weiter. Du kannst dein Mobilgerät mit einer Webro-Session koppeln – und so dich selbst, dein Produkt oder ein DIY-Tutorial filmen. Nimm deinen Gast an die virtuelle Hand und zeige, was du siehst.
+      imagePath: 02-keyfeatures/05-video-chat-echtzeit-demos.png
+    - title: File-Sharing
+      copytext: Teile mit deinem Gast direkt über Webro wichtige Dokumente wie Anleitungen, Kataloge oder Formulare – schnell und ohne, dass eine separate E-Mail nötig ist.
+      imagePath: 02-keyfeatures/06-file-sharing.png
+    - title: Terminverwaltung
+      copytext: Gerade keine Zeit? Kein Problem! Mit Webro und einer Kalender-Schnittstelle kann sich dein Gast einen Slot für eine Websession buchen.
+      imagePath: 02-keyfeatures/07-terminverwaltung.png
+- uid: usecases
+  headline: Von Autohändlerin bis Zimmermann
+  subheadline: |
+    Für Webro gibt es so viele Anwendungsfälle wie es Menschen gibt. Hier sind mal ein paar Beispiele:
+  hasColorInverted: true
+  items:
+    - title: Für Autohändler*innen oder Verkäufer
+      copytext: Mit Webro kannst du digitale Verkaufsgespräche führen und deinem Kunden die Fahrzeuge vorstellen, die auf deiner Website gelistet sind. Mit der Webro-Cam-Funktion kannst das Gespräch in ein Auto verlagern und dem Kunde live, aber kontaktlos den Motor oder die Innenausstattung demonstrieren.
+      imagePath: 02-keyfeatures/
+    - title: Für Stiftungen oder Behörden
+      copytext: Mit Webro kannst du dich um den Einzelfall kümmern. Helfe Förderpartnern oder Klienten dabei, die Anträge auf deiner Website auszufüllen. Falls weitere Dokumente nötig sind, kannst du sie direkt über Webro austauschen.
+      imagePath: 02-keyfeatures/
+    - title: Für Immobilienmakler*innen
+      copytext: Mit Webro kannst du Interessent*innen ein Objekt vorstellen, das auf deiner Seite gelistet ist und ihnen via Webro-Cam eine virtuelle Tour durch die Immobilie geben.
+      imagePath: 02-keyfeatures/
+    - title: Für Zimmerleute oder Handwerksbetriebe
+      copytext: Mit Webro kannst du einen Baupartner durch das Leistungsspektrum deiner Website führen, ein kurzes Projektupdate geben oder eine kurze Abnahme per Webro-Cam durchführen.
+      imagePath: 02-keyfeatures/

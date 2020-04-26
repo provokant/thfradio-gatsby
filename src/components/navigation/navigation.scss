@@ -1,0 +1,19 @@
+.nav {
+  @apply flex flex-col items-center h-20;
+
+  @screen lg {
+    @apply flex-row -mx-8 px-4;
+
+    &__item {
+      @apply px-4;
+
+      &__link {
+        @apply my-6;
+      }
+    }
+  }
+
+  &__item {
+    @apply text-center;
+  }
+}

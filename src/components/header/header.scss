@@ -1,0 +1,34 @@
+.header {
+  @apply fixed top-0 inset-x-0 z-10 bg-white border-b border-gray-400;
+
+  .container {
+    @apply flex flex-initial items-center justify-between;
+  }
+
+  &__logo {
+    @apply flex items-center flex-initial mr-8 text-3xl;
+  }
+
+  &__nav {
+    @apply flex-grow hidden text-base;
+
+    @screen lg {
+      @apply flex;
+    }
+  }
+
+  &__live {
+    @apply flex-initial flex items-center;
+  }
+
+  a {
+    @apply no-underline;
+  }
+}
+
+.--dark {
+
+  .header {
+    @apply text-pink-100 border-gray-900 bg-gray-900;
+  }
+}

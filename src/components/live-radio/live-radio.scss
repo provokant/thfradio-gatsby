@@ -1,0 +1,15 @@
+.live-radio {
+
+  &.rhap_container {
+    @apply bg-transparent shadow-none;
+
+    .rhap_ {
+
+      &progress-section,
+      &rewind-button,
+      &forward-button {
+        @apply hidden;
+      }
+    }
+  }
+}

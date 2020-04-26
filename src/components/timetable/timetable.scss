@@ -1,0 +1,73 @@
+.timetable {
+  
+  &__wrapper {
+    @apply mt-10;
+  }
+
+  &__group {
+    @apply grid grid-cols-1;
+
+    @screen lg {
+      @apply grid-cols-2 gap-8 pb-20 mb-20 border-gray-600;
+    }
+
+    &__title {
+      @apply flex justify-start text-2xl;
+
+      &__sub {
+        @apply ml-2 font-light;
+      }
+    }
+
+    &.--variant {
+      @apply text-magenta-600;
+    }
+
+    &.--passed {
+      @apply opacity-30;
+    }
+  }
+
+  &__children {
+    @apply text-lg;
+  }
+
+  &__child {
+    @apply flex;
+
+    &__summary {
+      @apply w-1/2 pl-4 font-medium;
+
+      @screen lg {
+        @apply w-full;
+      }
+    }
+
+    &__date {
+      @apply w-1/2;
+
+      @screen lg {
+        @apply w-auto;
+      }
+
+      span {
+        @apply ml-8 text-gray-800 font-light;
+      }
+    }
+
+  }
+}
+
+.--dark {
+
+  .timetable {
+
+    &__group {
+
+      &.--variant {
+
+        @apply text-aquamarine-600;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.footer {
+  @apply 
+    pt-48
+    pb-10
+
+    bg-magenta-900 
+    text-white;
+
+  @screen lg {
+    @apply pb-20;
+  }
+
+  .container {
+    @apply flex flex-col justify-between;
+
+    @screen lg {
+      @apply flex-col-reverse;
+    }
+  }
+
+  &__logo {
+    @apply 
+      flex 
+      justify-center 
+      pt-10 
+      
+      border-t 
+      border-indigo-400
+      text-3xl;
+
+    @screen lg {
+      @apply border-none justify-start pt-0;
+    }
+  }
+
+  &__nav {
+    @apply flex flex-col text-sm mb-16;
+
+    @screen lg {
+      @apply flex-row-reverse justify-between text-base;
+    }
+
+    &__main {
+    }
+
+    &__secondary {
+      @apply mt-6;
+
+      @screen lg {
+        @apply mt-0 flex;
+
+        a {
+          @apply mr-8 my-6;
+        }
+      }
+    }
+
+    a {
+      @apply text-center py-3 block opacity-70 duration-200;
+
+      &:hover,
+      &:focus { 
+        @apply opacity-100;
+      }
+    }
+  }
+}

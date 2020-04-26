@@ -1,0 +1,27 @@
+.cta {
+  @apply inline-block no-underline;
+
+  &__button {
+    @apply 
+      px-8
+      py-3 
+
+      rounded-sm
+      bg-white 
+      text-pink-600
+      font-medium
+      border
+      border-pink-300
+      shadow-md
+      
+      duration-150;
+
+    &:hover {
+      @apply bg-aquamarine-100 text-aquamarine-700 border-aquamarine-200 shadow-sm;
+    }
+
+    &:active {
+      @apply bg-violet-100 text-violet-700 border-violet-200 shadow-none;
+    }
+  }
+}

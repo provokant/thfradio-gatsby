@@ -1,0 +1,15 @@
+.headline {
+  @apply text-center;
+
+  @screen lg {
+    @apply text-left;
+  }
+
+  &__sub {
+    @apply text-base text-pink-500 mb-4;
+  }
+
+  &__title {
+    @apply mb-10;
+  }
+}

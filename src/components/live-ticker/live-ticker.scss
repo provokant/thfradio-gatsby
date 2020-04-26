@@ -1,0 +1,21 @@
+.live-ticker {
+  @apply 
+    py-2
+    bg-gray-900 
+    text-white
+    text-xs 
+    font-mono 
+    whitespace-no-wrap
+    overflow-hidden;
+
+  &__marquee {
+    
+  }
+}
+
+.--dark {
+
+  .live-ticker {
+    @apply bg-gray-600 text-gray-900;
+  }
+}

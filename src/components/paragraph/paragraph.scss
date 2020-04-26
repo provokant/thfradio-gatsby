@@ -1,0 +1,23 @@
+.paragraph {
+  @apply text-center mb-4 opacity-70 text-base;
+
+  @screen lg {
+    @apply text-left text-lg;
+  }
+
+  &.--small {
+    @apply text-sm;
+
+    @screen lg {
+      @apply text-base;
+    }
+  }
+
+  &.--narrow {
+    @apply mx-auto;
+
+    @screen lg {
+      @apply mx-0 w-5/6;
+    }
+  }
+}

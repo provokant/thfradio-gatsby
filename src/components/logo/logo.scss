@@ -1,0 +1,14 @@
+.logo {
+  @apply no-underline;
+
+  &__start {
+    @apply font-bold;
+  }
+
+  &__end {
+  }
+  
+  &.--inverted {
+    @apply text-white;
+  }
+}

@@ -1,0 +1,57 @@
+.hero {
+  @apply 
+    flex
+    flex-col
+    pt-12
+    px-10
+    pb-10
+    
+    rounded-lg
+    bg-magenta-200
+    text-pink-900;
+
+  @screen lg {
+    @apply flex-row items-end pt-16 px-20 pb-16;
+  }
+
+  &__title {
+    @apply text-xl text-center tracking-tight leading-tight font-medium;
+
+    @screen lg {
+      @apply text-2xl text-left w-3/5 tracking-normal;
+    }
+  }
+
+  &__button {
+    @apply
+      flex
+      justify-between
+      items-center
+      mt-16 
+      px-6
+      py-4
+
+      bg-white
+      font-bold
+      rounded-sm
+      no-underline
+      shadow-md
+      duration-150;
+    
+    &:hover,
+    &:focus {
+      @apply shadow-sm;
+    }
+
+    @screen lg { 
+      @apply w-2/5 ml-20 mt-0;
+    }
+
+    &__text {
+
+    }
+
+    &__icon {
+    }
+  }
+}

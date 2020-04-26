@@ -1,0 +1,73 @@
+html, body {
+  @apply font-sans text-black bg-white m-0 p-0;
+}
+
+body {
+  min-height: 100.01%;
+
+  @apply mt-20;
+}
+
+main {
+  &.--dark {
+    @apply bg-gray-900 text-pink-100;
+  }
+}
+
+h1 {
+  @apply text-4xl tracking-tighter font-medium leading-tight;
+
+  @screen lg {
+    @apply text-5xl tracking-tight;
+  }
+}
+
+h2 {
+  @apply text-3xl tracking-tighter font-medium leading-tight;
+
+  @screen lg {
+    @apply text-4xl tracking-tight;
+  }
+}
+
+h3 {
+  @apply text-xl tracking-tighter font-medium leading-tight;
+
+  @screen lg {
+    @apply text-2xl tracking-tight;
+  }
+}
+
+h4 {
+}
+
+p {
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-lines: 2;   
+  hyphenate-limit-last: always;
+  hyphenate-limit-zone: 8%;
+}
+
+a {
+  @apply cursor-pointer underline;
+
+  &:hover,
+  &:focus {
+  }
+
+  &:active {
+  }
+
+  &[href^=tel] {
+    @apply whitespace-no-wrap;
+  }
+}
+
+section {
+  @apply py-24;
+
+  @screen lg {
+    @apply py-48;
+  }
+}

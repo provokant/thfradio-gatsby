@@ -1,0 +1,68 @@
+.shows {
+
+  &__inner {
+    @apply grid grid-cols-1 gap-12 mt-10;
+
+    @screen lg {
+      @apply grid-cols-2 gap-10 mt-20;
+    }
+
+    @screen xl {
+      @apply grid-cols-3  ;
+    }
+  }
+
+  &-child {
+    @screen md {
+      @apply w-3/4 mx-auto;
+    }
+  
+    @screen lg {
+      @apply 
+        relative
+        w-full
+        m-0
+        mx-0 
+        pl-24
+        px-10
+        py-8
+        rounded-md
+        bg-gray-200;
+      }
+    
+  
+    &__icon {
+      @apply text-center text-4xl mb-4;
+      
+      @screen lg {
+        @apply 
+          absolute
+          top-0
+          left-0
+          mb-0
+  
+          text-left 
+          text-5xl;
+      }
+    }
+  
+    &__title {
+      @apply mb-6 text-left;
+      
+      @screen lg {
+        @apply mb-5 w-3/4 text-left;
+      }
+    }
+  }
+}
+
+.--dark {
+
+  .shows {
+    @apply text-white;
+
+    &-child {
+      @apply bg-black;
+    }
+  }
+}

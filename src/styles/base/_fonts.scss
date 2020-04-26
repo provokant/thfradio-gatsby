@@ -1,0 +1,58 @@
+// Fonts paths have to be relative to index.scss file
+// because of @import'ing this file.
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./../fonts/SourceSansPro-ExtraLight.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./../fonts/SourceSansPro-ExtraLightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./../fonts/SourceSansPro-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./../fonts/SourceSansPro-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./../fonts/SourceSansPro-SemiBold.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./../fonts/SourceSansPro-SemiBoldItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./../fonts/SourceSansPro-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./../fonts/SourceSansPro-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}

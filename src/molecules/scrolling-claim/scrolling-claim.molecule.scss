@@ -1,0 +1,66 @@
+.scrolling-claim {
+
+  @apply mb-48;
+
+  @screen lg {
+    @apply mb-0;
+  }
+  
+  .container {
+    @apply flex flex-col items-center justify-center;
+
+    @screen lg {
+      @apply flex-row items-start;
+    }  
+  }
+
+  &__logo {
+    @apply text-5xl items-start;
+
+    @screen lg {
+      @apply mr-6;
+    }
+
+    &.--hide-on-mobile {
+      @apply hidden;
+
+      @screen lg {
+        @apply flex;
+      }
+    }
+  }
+
+  &__inner {
+    @apply 
+      flex
+      flex-col
+      w-full
+      items-center
+      justify-center
+      
+      text-5xl
+      mt-12;
+
+    @screen lg {
+      @apply flex-row items-start w-auto mt-0;
+    }
+
+    &__static {
+      @screen lg {
+        @apply mr-4;
+      }
+    }
+
+    &__scrolling {
+      @apply w-full;
+
+      @screen lg {
+        /**
+         * Only estimated maximum width of element. Actual width
+         * depends on text length.
+         */
+        @apply w-64;
+      }
+    }
+  }
+}

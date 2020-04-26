@@ -1,0 +1,18 @@
+// Reset
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Variables
+@import 'variables';
+
+// Base
+@import 'base/fonts';
+@import 'base/global';
+
+// Helpers
+@import 'helper/list';
+
+// .container {
+//   @apply mx-auto px-10;
+// }
