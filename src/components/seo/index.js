@@ -64,18 +64,23 @@ function SEO({ title, description = "", meta = [], lang = "en" }) {
         },
       ].concat(meta)}
     >
-      {/* <script src="//widget.mixcloud.com/media/js/footerWidgetApi.js" async>
+      <script src="//widget.mixcloud.com/media/js/footerWidgetApi.js" async>
         {`{"feed": "/thfradio/"}`}
-      </script> */}
-      <script src="https://widget.mixcloud.com/media/js/footerWidgetApi.js" />
-      <script type="text/javascript">
-        const mc = Mixcloud.FooterWidget("/thfradio/")
-        mc.then(function(widget) {
-          // Put code that interacts with the widget here e.g.
-          // widget.events.pause.on(console.log('test'))
-          console.log('test')
-        });
       </script>
+      {/* <script src="https://widget.mixcloud.com/media/js/footerWidgetApi.js" />
+      <script type="text/javascript">
+        {`
+          document.addEventListener("DOMContentLoaded", function(event) {
+            console.log("testing")
+          })
+          // const mc = Mixcloud.FooterWidget("/thfradio/")
+          // mc.then(function(widget) {
+          //   // Put code that interacts with the widget here e.g.
+          //   // widget.events.pause.on(console.log('test'))
+          //   console.log('test')
+          // })
+        `}
+      </script> */}
       {/* <script src="https://widget.mixcloud.com/media/js/widgetApi.js" type="text/javascript"></script> */}
     </Helmet>
   )

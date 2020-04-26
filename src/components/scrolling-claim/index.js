@@ -1,6 +1,6 @@
 import React from "react"
 
-import TextScroller from "./../../atoms/text-scroller/text-scroller.atom"
+import TextScroller from "../text-scroller"
 import Logo from "../logo"
 import Container from "../container"
 

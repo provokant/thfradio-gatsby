@@ -32,8 +32,8 @@ exports.sourceNodes = async ({
     const name = showNameSplitted[0].trim()
 
     const date = showNameSplitted.length > 1
-      ? moment(showNameSplitted[1].trim(), "DD.MM.YY")
-      : "No date"
+      ? moment(showNameSplitted[1].trim(), "DD.MM.YY").format()
+      : null
 
     // create show nodes
     const nodeData = {
@@ -51,6 +51,8 @@ exports.sourceNodes = async ({
       }
     }
 
+    console.log(nodeData)
+
     createNode(nodeData)
   })
 }
@@ -63,11 +65,8 @@ exports.onCreateNode = async ({
   actions: {
     createNodeField, 
     createNode,
-    createParentChildLink,
   },
   cache,
-  createContentDigest,
-  createNodeId,
   node, 
   store,
 }) => {

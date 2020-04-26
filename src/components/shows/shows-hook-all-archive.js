@@ -25,14 +25,14 @@ const useAllArchive = () => {
           url
         }
       }
-    }
+    } 
   `)
 
   const { archive } = allShow
 
-  const archiveSorted = sortBy(archive, (show) => { 
-    return new moment(show.date)
-  }).reverse()
+  const archiveSorted = archive.sort((a, b) => { 
+    return new Date(b.date) - new Date(a.date)
+  })
 
   return { archive, archiveSorted }
 }
