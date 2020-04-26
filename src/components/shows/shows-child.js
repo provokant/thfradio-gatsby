@@ -40,8 +40,7 @@ const ShowsChild = ({
     }
     // Fallback if footer widget not working
     if (!window.Mixcloud) {
-      console.log("test")
-      navigate(url)
+      window.open(url, "_blank")
     }
   }
 

@@ -5,14 +5,14 @@
   }
 
   &__group {
-    @apply grid grid-cols-1;
+    @apply grid grid-cols-1 border border-gray-600 p-4 mb-10;
 
     @screen lg {
-      @apply grid-cols-2 gap-8 pb-20 mb-20 border-gray-600;
+      @apply grid-cols-2 gap-4 mb-12 border-gray-600;
     }
 
     &__title {
-      @apply flex justify-start text-2xl;
+      @apply flex justify-between bg-gray-900 text-white text-lg p-4;
 
       &__sub {
         @apply ml-2 font-light;
@@ -29,25 +29,37 @@
   }
 
   &__children {
-    @apply text-lg;
+    @apply font-mono -mb-4 mt-4;
+
+    @screen lg {
+      @apply mt-0;
+    }
   }
 
   &__child {
-    @apply flex;
+    @apply flex items-baseline mb-4;
 
     &__summary {
-      @apply w-1/2 pl-4 font-medium;
+      @apply w-1/2 font-medium;
 
       @screen lg {
-        @apply w-full;
+        @apply w-full pl-8;
       }
     }
 
     &__date {
-      @apply w-1/2;
+      @apply flex flex-row items-center w-1/2 whitespace-no-wrap;
 
       @screen lg {
         @apply w-auto;
+      }
+
+      &__icon {
+        @apply w-6 mx-4 overflow-hidden;
+
+        @screen lg {
+          @apply w-20;
+        }
       }
 
       span {

@@ -1,0 +1,16 @@
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="10">
+		<defs>
+			<!-- Geometry -->
+			<g>
+				<rect id="square" x="0" y="0" width="9999" height="10" />
+			</g>
+
+			<!-- Patterns -->
+			<pattern id="wave" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+				<path d="M 0 7.5 Q 2.5 7.5 2.5 5 Q 2.5 2.5 5 2.5 Q 7.5 2.5 7.5 5 Q 7.5 7.5 10 7.5"  stroke="black" fill="transparent" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+			</pattern>
+		</defs>
+
+		<!-- Graphics -->
+		<use xlink:href="#square" transform="translate(000, 000)" fill="url(#wave)"/>
+	</svg>

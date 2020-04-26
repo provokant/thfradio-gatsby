@@ -9,7 +9,7 @@ moment.updateLocale("de", localization)
 
 export const TimetableGrouped = ({ by }) => by &&
   Object.entries(by).map(([date, shows], i) => (
-    <div className={`
+    <div role="presentation" className={`
       timetable__group
       ${moment().diff(date, "week") % 2 !== 0 ? " --variant" : ""}
       ${moment().diff(date, "day") > 0 ? " --passed" : ""}
@@ -54,7 +54,7 @@ export const TimetableGroupTitle = ({ date }) =>
     </div>
     
     <div className="timetable__group__title__sub">
-      / {moment(date).format("DD.MM.YYYY")}
+      {moment(date).format("DD.MM.YYYY")}
     </div>
   </div>
 
