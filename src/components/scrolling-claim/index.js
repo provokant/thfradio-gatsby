@@ -1,10 +1,10 @@
 import React from "react"
 
 import TextScroller from "./../../atoms/text-scroller/text-scroller.atom"
-import Logo from "./../../components/logo"
-import Container from "./../../components/container"
+import Logo from "../logo"
+import Container from "../container"
 
-import "./scrolling-claim.molecule.scss"
+import "./scrolling-claim.scss"
 
 const ScrollingClaim = ({ staticText = "", scrollingText = [], hasLogoHiddenOnMobile = false, hasLogoTextOnly = false }) => {
   return (
