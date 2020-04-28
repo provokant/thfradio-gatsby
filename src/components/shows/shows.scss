@@ -4,11 +4,11 @@
     @apply grid grid-cols-1 gap-12 mt-10;
 
     @screen lg {
-      @apply grid-cols-2 gap-10 mt-20;
+      @apply grid-cols-3 gap-10 mt-20;
     }
 
     @screen xl {
-      @apply grid-cols-3;
+      @apply grid-cols-4;
     }
   }
 
@@ -79,7 +79,7 @@
           font-bold 
           font-sans 
           tracking-tight 
-          text-xl 
+          text-lg
           leading-tight;
         
         @screen lg {
