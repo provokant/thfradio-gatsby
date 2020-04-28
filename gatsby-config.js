@@ -3,8 +3,7 @@ require(`dotenv`).config()
 
 const { 
   CONTENTFUL_ACCESS_TOKEN, 
-  CONTENTFUL_SPACE_ID,
-  MIXCLOUD_API
+  CONTENTFUL_SPACE_ID
 } = process.env
 
 const plugins = [
@@ -19,16 +18,16 @@ const plugins = [
       ]
     },
   },
-  { 
-    resolve: `gatsby-plugin-purgecss`,
-    options: {
-      develop: true,
-      printRejected: true,
-      tailwind: true,
-      ignore: [`/components/live-radio/`],
-      purgeOnly : [`/components/`, `/styles/index.scss`]
-    }
-  },
+  // { 
+  //   resolve: `gatsby-plugin-purgecss`,
+  //   options: {
+  //     develop: true,
+  //     printRejected: true,
+  //     tailwind: true,
+  //     ignore: [`/components/live-radio/`],
+  //     purgeOnly : [`/components/`, `/styles/index.scss`]
+  //   }
+  // },
   `gatsby-plugin-react-helmet`,
   `gatsby-transformer-yaml`,
   {
@@ -73,7 +72,12 @@ const plugins = [
       url: `https://ics.teamup.com/feed/ksyt64me39ssy5e2ko/7027389.ics`,
     },
   },
-  `gatsby-plugin-anchor-links`
+  {
+    resolve: `gatsby-plugin-anchor-links`,
+    options: {
+      offset: -100
+    }
+  },
   // this (optional) plugin enables Progressive Web App + Offline functionality
   // To learn more, visit: https://gatsby.dev/offline
   `gatsby-plugin-offline`,

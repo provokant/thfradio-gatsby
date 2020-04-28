@@ -1,8 +1,8 @@
 - title: TORHAUS
-  url: https://torhausberlin.de/
+  url: "https://torhausberlin.de/"
 - title: Programm
-  url: /#timetable
+  url: "#timetable"
 - title: Archiv
-  url: /#shows
+  url: "#shows"
 - title: Kontakt
-  url: /de/impressum
+  url: "de/impressum"

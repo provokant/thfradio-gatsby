@@ -1,6 +1,5 @@
 {
-  "name": "webro-landingpage",
-  "private": true,
+  "name": "nls-gatsby-thfradio",
   "version": "1.0.0",
   "author": "Michael Czechowski <mail@dailysh.it>",
   "dependencies": {
@@ -13,25 +12,22 @@
     "gatsby-plugin-anchor-links": "^1.1.1",
     "gatsby-plugin-manifest": "^2.2.17",
     "gatsby-plugin-offline": "^3.0.7",
-    "gatsby-plugin-postcss": "^2.1.7",
     "gatsby-plugin-preact": "^3.2.1",
     "gatsby-plugin-purgecss": "^5.0.0",
     "gatsby-plugin-react-helmet": "^3.1.7",
     "gatsby-plugin-react-svg": "^3.0.0",
-    "gatsby-plugin-remote-images": "^2.1.0",
     "gatsby-plugin-sass": "^2.1.14",
     "gatsby-plugin-sharp": "^2.2.24",
     "gatsby-remark-autolink-headers": "^2.1.13",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-images": "^3.1.25",
-    "gatsby-source-apiserver": "^2.1.4",
     "gatsby-source-contentful": "^2.2.8",
     "gatsby-source-filesystem": "^2.1.24",
     "gatsby-source-ical": "^1.1.0",
     "gatsby-transformer-remark": "^2.6.26",
     "gatsby-transformer-sharp": "^2.2.15",
     "gatsby-transformer-yaml": "^2.3.1",
-    "is-url-external": "^1.0.3",
+    "is-internal-link": "^1.1.4",
     "lodash": "^4.17.15",
     "marked": "^1.0.0",
     "moment": "^2.24.0",
@@ -59,7 +55,8 @@
     "start": "gatsby clean && ENABLE_GATSBY_REFRESH_ENDPOINT=true gatsby develop",
     "host": "gatsby develop -H 0.0.0.0",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "upgrade": "npm-check --update"
   },
   "repository": {
     "type": "git",
@@ -67,5 +64,8 @@
   },
   "bugs": {
     "url": "https://github.com/nextlevelshit/nls-gatsby-thfradio"
+  },
+  "devDependencies": {
+    "npm-check": "^5.9.2"
   }
 }
