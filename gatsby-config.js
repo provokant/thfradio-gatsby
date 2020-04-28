@@ -2,8 +2,8 @@ const manifestConfig = require(`./manifest-config`)
 require(`dotenv`).config()
 
 const { 
-  ACCESS_TOKEN, 
-  SPACE_ID,
+  CONTENTFUL_ACCESS_TOKEN, 
+  CONTENTFUL_SPACE_ID,
   MIXCLOUD_API
 } = process.env
 
@@ -62,8 +62,8 @@ const plugins = [
   {
     resolve: `gatsby-source-contentful`,
     options: {
-      spaceId: SPACE_ID,
-      accessToken: ACCESS_TOKEN,
+      spaceId: CONTENTFUL_SPACE_ID,
+      accessToken: CONTENTFUL_ACCESS_TOKEN,
     },
   },
   {
@@ -73,30 +73,10 @@ const plugins = [
       url: `https://ics.teamup.com/feed/ksyt64me39ssy5e2ko/7027389.ics`,
     },
   },
-  // {
-  //   resolve: `gatsby-source-apiserver`,
-  //   options: {
-  //     typePrefix: `Mixcloud`,
-  //     url: MIXCLOUD_API,
-  //     method: `get`,
-  //     // data: {},
-  //     name: `Shows`,
-  //     localSave: false,
-  //     verboseOutput: true,
-  //     enableDevRefresh: true,
-  //   },
-  // },
-  // {
-  //   resolve: `gatsby-plugin-remote-images`,
-  //   options: {
-  //     nodeType: `mixcloud__showsData`,
-  //     imagePath: `pictures.medium`,
-  //   },
-  // },
   `gatsby-plugin-anchor-links`
   // this (optional) plugin enables Progressive Web App + Offline functionality
   // To learn more, visit: https://gatsby.dev/offline
-  // `gatsby-plugin-offline`,
+  `gatsby-plugin-offline`,
 ]
 
 // module.exports = client.getEntries().then(() => {

@@ -31,6 +31,7 @@
     "gatsby-transformer-remark": "^2.6.26",
     "gatsby-transformer-sharp": "^2.2.15",
     "gatsby-transformer-yaml": "^2.3.1",
+    "is-url-external": "^1.0.3",
     "lodash": "^4.17.15",
     "marked": "^1.0.0",
     "moment": "^2.24.0",
