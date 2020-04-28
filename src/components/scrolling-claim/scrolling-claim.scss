@@ -1,5 +1,5 @@
 .scrolling-claim {
-  @apply mb-48;
+  @apply mb-8;
 
   @screen lg {
     @apply mb-0 flex;
@@ -37,11 +37,10 @@
       items-center
       justify-center
       
-      text-5xl
-      mt-12;
+      text-5xl;
 
     @screen lg {
-      @apply flex-row items-start w-auto mt-0;
+      @apply flex-row items-start w-auto;
     }
 
     &__static {

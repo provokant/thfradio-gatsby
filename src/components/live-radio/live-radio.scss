@@ -1,17 +1,28 @@
 .live-radio {
 
   &.rhap_container {
-    min-width: 130px;
+    min-width: 30px;
 
-    @apply bg-transparent shadow-none p-0 text-secondary-700;
+    @screen md {
+      min-width: 130px;
+    }
+
+    @apply bg-transparent shadow-none py-4 px-0 text-secondary-700;
 
     .rhap {
 
       &_additional-controls,
       &_progress-section,
       &_rewind-button,
-      &_forward-button {
+      &_forward-button,
+      &_volume-container {
         @apply hidden;
+      }
+
+      @screen md {
+        &_volume-container {
+          @apply flex;
+        }
       }
 
       &_volume-bar {

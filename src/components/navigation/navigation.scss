@@ -1,5 +1,5 @@
 .nav {
-  @apply flex flex-col items-center h-20;
+  @apply flex flex-col items-center;
 
   @screen lg {
     @apply flex-row -mx-8 px-4;

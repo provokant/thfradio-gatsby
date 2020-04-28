@@ -6,7 +6,11 @@
   }
 
   &__logo {
-    @apply flex flex-none items-center flex-initial mr-8 text-3xl;
+    @apply flex flex-none items-center flex-initial mr-2 text-3xl;
+
+    @screen lg {
+      @apply mr-8;
+    }
   }
 
   &__nav {
