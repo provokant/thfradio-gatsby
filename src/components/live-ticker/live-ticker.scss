@@ -1,12 +1,9 @@
 .live-ticker {
-  box-sizing: border-box;
 
   @apply 
     py-2
-    bg-gray-900 
-    text-white
-    text-xs 
     font-mono 
+    text-secondary-700
     whitespace-no-wrap
     overflow-hidden;
 }

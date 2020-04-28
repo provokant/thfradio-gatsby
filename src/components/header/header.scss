@@ -6,19 +6,50 @@
   }
 
   &__logo {
-    @apply flex items-center flex-initial mr-8 text-3xl;
+    @apply flex flex-none items-center flex-initial mr-8 text-3xl;
   }
 
   &__nav {
-    @apply flex-grow hidden text-base;
+    @apply hidden text-base;
 
     @screen lg {
-      @apply flex;
+      @apply flex flex-none;
+    }
+  }
+
+  &__ticker {
+    @apply relative flex-initial overflow-hidden;
+
+    &:before,
+    &:after {
+      @apply absolute inset-y-0 w-12 h-full z-20;
+    }
+
+    &:before {
+      content: "";
+      background-image: linear-gradient(
+        90deg, 
+        #FAFAFA 70%, 
+        rgba(250,250,250,0)
+      );
+  
+      @apply left-0;
+    }
+
+    &:after {
+      content: "";
+      background-image: linear-gradient(
+        270deg, 
+        #FAFAFA 70%, 
+        rgba(250,250,250,0)
+      );
+  
+      @apply right-0;
     }
   }
 
   &__live {
-    @apply flex-initial flex items-center;
+    @apply flex-none flex items-center;
   }
 
   a {

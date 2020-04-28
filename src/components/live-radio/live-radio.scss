@@ -1,10 +1,9 @@
 .live-radio {
-  @apply text-primary-900;
 
   &.rhap_container {
     min-width: 130px;
 
-    @apply bg-transparent shadow-none p-0;
+    @apply bg-transparent shadow-none p-0 text-secondary-700;
 
     .rhap {
 
@@ -13,6 +12,18 @@
       &_rewind-button,
       &_forward-button {
         @apply hidden;
+      }
+
+      &_volume-bar {
+        @apply bg-secondary-200;
+      }
+
+      &_button-clear {
+        @apply text-secondary-700;
+      }
+
+      &_volume-indicator {
+        @apply bg-secondary-700
       }
 
       &_controls-section {
