@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react"
 import Img from "gatsby-image"
-import { navigate } from "gatsby"
 import moment from "moment"
 import PlayCircle from "../../images/play-circle.svg"
 
@@ -45,6 +44,7 @@ const ShowsChild = ({
   }
 
   return (
+    // eslint-disable-next-line
     <button className={`shows-child ${isPlaying && "--active"}`} role="play" data-mixcloud-play-button={link} onClick={() => toggleShow(slug)}>
       <div className="shows-child__cover">
         <div className="shows-child__cover__image">
@@ -58,7 +58,7 @@ const ShowsChild = ({
         <div className="shows-child__content__title">{name}</div>
         {/* <div className="shows-child__content__length">{audio_length}</div> */}
         <div className="shows-child__content__date">
-          Aufzeichnung vom {moment(date).format("DD.MM.YYYY")}
+          {moment(date).format("DD.MM.YYYY")}
         </div>
       </div>
     </button>

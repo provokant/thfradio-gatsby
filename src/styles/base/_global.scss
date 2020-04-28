@@ -15,7 +15,7 @@ main {
 }
 
 h1 {
-  @apply text-4xl tracking-tighter font-bold leading-tight;
+  @apply mt-10 mb-8 text-4xl tracking-tighter font-bold leading-tight;
 
   @screen lg {
     @apply text-5xl tracking-tight;
@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  @apply text-3xl tracking-tighter font-bold leading-tight;
+  @apply mt-8 mb-6 text-3xl tracking-tighter font-bold leading-tight;
 
   @screen lg {
     @apply text-4xl tracking-tight;
@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-  @apply text-xl tracking-tighter font-bold leading-tight;
+  @apply mt-6 mb-4 text-xl tracking-tighter font-bold leading-tight;
 
   @screen lg {
     @apply text-2xl tracking-tight;

@@ -40,6 +40,7 @@
     "react-double-marquee": "^1.0.1",
     "react-h5-audio-player": "^3.0.5",
     "react-helmet": "^5.2.1",
+    "react-marquee-double": "^0.2.0",
     "react-scroll-parallax": "^2.2.0",
     "react-spring": "^8.0.27",
     "tailwindcss": "^1.1.2"

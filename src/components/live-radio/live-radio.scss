@@ -1,14 +1,22 @@
 .live-radio {
+  @apply text-primary-900;
 
   &.rhap_container {
-    @apply bg-transparent shadow-none;
+    min-width: 130px;
 
-    .rhap_ {
+    @apply bg-transparent shadow-none p-0;
 
-      &progress-section,
-      &rewind-button,
-      &forward-button {
+    .rhap {
+
+      &_additional-controls,
+      &_progress-section,
+      &_rewind-button,
+      &_forward-button {
         @apply hidden;
+      }
+
+      &_controls-section {
+        @apply m-0;
       }
     }
   }

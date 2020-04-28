@@ -6,9 +6,9 @@
     px-10
     pb-10
     
-    rounded-lg
-    bg-secondary-200
-    text-secondary-900;
+    rounded-sm
+    bg-gray-900
+    text-white;
 
   @screen lg {
     @apply flex-row items-end pt-16 px-20 pb-16;
@@ -36,6 +36,7 @@
       rounded-sm
       no-underline
       shadow-md
+      text-black
       duration-150;
     
     &:hover,

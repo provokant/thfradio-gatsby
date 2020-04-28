@@ -1,7 +1,7 @@
 import React from "react"
-import Marquee from "react-double-marquee"
 import moment from "moment"
 import localization from "moment/locale/de"
+import Marquee from "react-marquee-double"
 
 import useAllShows from "../timetable/timetable-hook-all-shows"
 
@@ -31,8 +31,15 @@ export const LiveTicker = () => {
 
   return (
     <div className="live-ticker">
-      <Marquee direction="left" childMargin={0}>
-        <span dangerouslySetInnerHTML={{ __html: message }} />
+      <Marquee
+        step={1}
+        space={0}
+        interval={20}
+        autoStart={true}
+        direction={'left'}
+        delay={1000}
+      >
+        <span dangerouslySetInnerHTML={{ __html: message.repeat(5) }} />
       </Marquee>
     </div>
   )

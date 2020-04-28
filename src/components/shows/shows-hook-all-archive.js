@@ -1,6 +1,4 @@
 import { useStaticQuery, graphql } from "gatsby"
-import { sortBy } from "lodash"
-import moment from "moment"
 
 const useAllArchive = () => {
   const { allShow } = useStaticQuery(graphql`

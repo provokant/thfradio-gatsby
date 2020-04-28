@@ -5,10 +5,10 @@
   }
 
   &__group {
-    @apply grid grid-cols-1 border border-gray-600 p-4 mb-10;
+    @apply grid grid-cols-1 border border-gray-500 p-4 mb-10;
 
     @screen lg {
-      @apply grid-cols-2 gap-4 mb-12 border-gray-600;
+      @apply grid-cols-2 gap-4 mb-12;
     }
 
     &__title {
@@ -20,7 +20,17 @@
     }
 
     &.--variant {
-      @apply text-secondary-600;
+      @apply opacity-50;
+
+      .timetable {
+        
+        &__group {
+
+          &__title {
+            
+          }
+        }
+      }
     }
 
     &.--passed {

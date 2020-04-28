@@ -3,7 +3,7 @@
     pt-48
     pb-10
 
-    bg-secondary-900 
+    bg-primary-700
     text-white;
 
   @screen lg {
@@ -62,6 +62,14 @@
       &:focus { 
         @apply opacity-100;
       }
+    }
+  }
+
+  &__credits {
+    @apply w-2/3 opacity-50 font-mono my-20 mx-auto text-center;
+
+    @screen lg {
+      @apply w-3/5;
     }
   }
 }

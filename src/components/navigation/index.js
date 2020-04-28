@@ -14,7 +14,7 @@ const Navigation = () => {
         <li className="nav__item" key={n}>
           {isInternal(url) 
             ? <AnchorLink to={url} title={title} className="nav__item__link" />
-            : <a href={url} target="_blank" title={title} className="nav__item__link">{title}</a>
+            : <a href={url} target="_blank" rel="noopener noreferrer" title={title} className="nav__item__link">{title}</a>
           }
         </li>
       ))}

@@ -1,4 +1,6 @@
 .live-ticker {
+  box-sizing: border-box;
+
   @apply 
     py-2
     bg-gray-900 
@@ -7,10 +9,6 @@
     font-mono 
     whitespace-no-wrap
     overflow-hidden;
-
-  &__marquee {
-    
-  }
 }
 
 .--dark {

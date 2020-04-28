@@ -38,6 +38,11 @@ export const Footer = () => {
           <Logo isInverted/>
         </div>
       </Container>
+      <Container>
+        <div className="footer__credits">
+          Diese Webseite wurde entwickelt mit freundlicher Unterstützung von <a href="//dailysh.it"><nobr>NEXT LEVEL SHIT</nobr></a> und der <a href="//github.com/nextlevelshit/nls-gatsby-thfradio">Code ist frei verfügbar auf GitHub</a>.
+        </div>
+      </Container>
     </footer>
   )
 }

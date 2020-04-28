@@ -12224,6 +12224,13 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-marquee-double@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/react-marquee-double/-/react-marquee-double-0.2.0.tgz#dadd6c34167090e2cfe801fa3a78a1ab7bf4d7ba"
+  integrity sha512-tHAGzcyBy4yOB/1wLK7/hETjXWIgZH/yW31MGZaNBOADjC6fJJjHfSF9YsT21qvxcp8/Pjll1P4YRJGJpgCm/A==
+  dependencies:
+    prop-types "^15.6.0"
+
 react-reconciler@^0.24.0:
   version "0.24.0"
   resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.24.0.tgz#5a396b2c2f5efe8554134a5935f49f546723f2dd"

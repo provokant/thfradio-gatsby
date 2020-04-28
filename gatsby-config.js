@@ -18,16 +18,16 @@ const plugins = [
       ]
     },
   },
-  // { 
-  //   resolve: `gatsby-plugin-purgecss`,
-  //   options: {
-  //     develop: true,
-  //     printRejected: true,
-  //     tailwind: true,
-  //     ignore: [`/components/live-radio/`],
-  //     purgeOnly : [`/components/`, `/styles/index.scss`]
-  //   }
-  // },
+  { 
+    resolve: `gatsby-plugin-purgecss`,
+    options: {
+      develop: true,
+      printRejected: true,
+      tailwind: true,
+      ignore: [`/components/live-radio/`, `/components/live-ticker/`],
+      purgeOnly : [`/components/`, `/styles/index.scss`]
+    }
+  },
   `gatsby-plugin-react-helmet`,
   `gatsby-transformer-yaml`,
   {
