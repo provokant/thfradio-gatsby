@@ -11,8 +11,8 @@ export const TimetableGrouped = ({ by }) => by &&
   Object.entries(by).map(([date, shows], i) => (
     <div role="presentation" className={`
       timetable__group
-      ${moment().diff(date, "week") % 2 !== 0 ? " --variant" : ""}
-      ${moment().diff(date, "day") > 0 ? " --passed" : ""}
+      ${moment().diff(moment(date), "week") % 2 !== 0 ? " --variant" : ""}
+      ${moment().diff(moment(date), "day") > 0 ? " --passed" : ""}
     `}>
       <TimetableGroupTitle date={date} />
       <TimetableChildren shows={shows} key={i} />

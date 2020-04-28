@@ -18,12 +18,12 @@
         @apply bg-secondary-200;
       }
 
-      &_button-clear {
-        @apply text-secondary-700;
+      &_volume-indicator {
+        @apply bg-white border border-secondary-700 shadow-none;
       }
 
-      &_volume-indicator {
-        @apply bg-secondary-700
+      &_button-clear {
+        @apply text-secondary-700;
       }
 
       &_controls-section {

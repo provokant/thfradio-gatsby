@@ -1,6 +1,6 @@
 import React from "react"
+import TextLoop from "react-text-loop"
 
-import TextScroller from "../text-scroller"
 import Logo from "../logo"
 
 import "./scrolling-claim.scss"
@@ -16,7 +16,7 @@ export const ScrollingClaim = ({ staticText = "", scrollingText = [], hasLogoHid
           {staticText}
         </div>
         <div className="scrolling-claim__inner__scrolling">
-          <TextScroller text={scrollingText} />
+          <TextLoop children={scrollingText} />
         </div>
       </div>
     </div>

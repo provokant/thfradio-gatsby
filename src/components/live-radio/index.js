@@ -1,6 +1,10 @@
 import React, { useContext, useRef } from "react"
 import AudioPlayer from "react-h5-audio-player"
 import "react-h5-audio-player/src/styles.scss"
+import PlayCircle from "../../images/play-circle.svg"
+import PauseCircle from "../../images/pause-circle.svg"
+import Volume from "../../images/volume.svg"
+import VolumeMute from "../../images/volume-mute.svg"
 
 import {
   GlobalDispatchContext,
@@ -25,6 +29,12 @@ export const LiveRadio = () => {
     <AudioPlayer
       src={process.env.GATSBY_LIVE_RADIO_API}
       layout="horizontal"
+      customIcons={{ 
+        play: <PlayCircle />,
+        pause: <PauseCircle />,
+        volume: <Volume />,
+        volumeMute: <VolumeMute /> 
+      }}
       customAdditionalControls={[]}
       customProgressBarSection={[]}
       className="live-radio"

@@ -11,7 +11,7 @@ import {
 import "./shows.scss"
 
 const ShowsChild = ({
-  audio_length, 
+  // audio_length, 
   date, 
   name, 
   link,
