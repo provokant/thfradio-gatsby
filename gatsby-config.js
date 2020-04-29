@@ -37,8 +37,6 @@ const plugins = [
       path: `${__dirname}/data/yaml`,
     },
   },
-  `gatsby-transformer-sharp`,
-  `gatsby-plugin-sharp`,
   {
     resolve: `gatsby-source-filesystem`,
     options: {
@@ -54,6 +52,8 @@ const plugins = [
       }
     }
   },
+  `gatsby-transformer-sharp`,
+  `gatsby-plugin-sharp`,
   {
     resolve: `gatsby-plugin-manifest`,
     options: manifestConfig,
