@@ -14,7 +14,7 @@ const useAllArchive = () => {
           pictures {
             childImageSharp {
               fluid(maxWidth: 300) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }

@@ -11,8 +11,8 @@ import "./first-impression.scss"
 import useBackgroundImages from "./first-impression-hook-images"
 
 export const FirstImpression = ({ hasDarkBackground = false }) => {
-  const { imageDefault, imageDark } = useBackgroundImages()
-  // const image = hasDarkBackground ? imageDark : imageDefault
+  const { imageDefault } = useBackgroundImages()
+  
   const scrollingText = [
     "Bürger*innen",
     "Kreative",
