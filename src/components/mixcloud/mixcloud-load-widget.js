@@ -2,7 +2,7 @@ import load from "load-script"
 
 export const loadWidget = (iframe, cb) => {
   return load(
-    "https://widget.mixcloud.com/media/js/footerWidgetApi.js", 
+    "//widget.mixcloud.com/media/js/footerWidgetApi.js", 
     {
       async: true
     }, 

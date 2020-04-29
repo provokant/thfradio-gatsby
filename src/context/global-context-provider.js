@@ -6,7 +6,8 @@ export const GlobalDispatchContext = React.createContext()
 const initialState = {
   theme: "light",
   isLiveRadioPlaying: false,
-  archivePlays: null
+  archivePlays: null,
+  isArchivPlaying: true
 }
 
 function reducer(state, action) {

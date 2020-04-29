@@ -43,6 +43,7 @@
     "react-h5-audio-player": "^3.0.5",
     "react-helmet": "^5.2.1",
     "react-marquee-double": "^0.2.0",
+    "react-player": "^2.0.1",
     "react-scroll-parallax": "^2.2.0",
     "react-soundcloud-widget": "^2.0.4",
     "react-spring": "^8.0.27",
