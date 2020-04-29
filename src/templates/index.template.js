@@ -10,8 +10,7 @@ import Timetable from "../components/timetable"
 
 const IndexTemplate = () => {
   const currentHour = parseFloat(moment().format("HH"))
-  const isNight = true
-  // const isNight = currentHour > 18 || currentHour < 7
+  const isNight = currentHour > 18 || currentHour < 7
 
   return (
     <Layout applyDarkMode={isNight}>
