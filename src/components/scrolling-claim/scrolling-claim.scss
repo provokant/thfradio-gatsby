@@ -10,7 +10,7 @@
   }
 
   &__static {
-    @apply inline-block;
+    @apply inline-block font-bold;
 
     @screen lg {
       @apply mr-4;

@@ -1,13 +1,13 @@
 .first-impression {
-  min-height: 90vh;
+  min-height: 70vh;
 
-  @apply relative flex flex-col justify-center mb-12 text-white overflow-x-hidden pt-32 pb-48;
+  @apply relative flex flex-col justify-center mb-12 text-white overflow-x-hidden pb-48 pt-64;
 
   &__claim {
     @apply text-center;
 
     @screen lg {
-      @apply text-left w-2/3;
+      @apply text-left w-3/4;
     }
   }
 
@@ -15,7 +15,7 @@
     @apply w-40 my-8 mx-auto overflow-hidden;
 
     @screen lg {
-      @apply w-48 mx-0;
+      @apply mx-0 w-48;
     }
   }
 
@@ -31,10 +31,6 @@
     }
   }
 
-  &__paragraph {
-    // @apply font-mono;
-  }
-
   &::before {
     @apply bg-primary-900;
     
@@ -45,17 +41,10 @@
 .--dark {
 
   .first-impression {
-    @apply text-black;
 
-    &__wave {
-      @apply text-black;
-    }
   }
   
   .first-impression.first-impression {
 
-    &::before {
-      background-color: #f7e0a9;
-    }
   }
 }

@@ -22,7 +22,7 @@ export const LiveTicker = () => {
       Uhr
       –
     ` : `
-      NOW PLAYING AWESOME MUSIC – <b>Nächste Show
+      NOW PLAYING THF RADIO ARCHIV – <b>Nächste Show
       am
       ${moment(nextPlaying.start).format("dddd, HH:mm")} Uhr</b>
       <i>${nextPlaying.summary}</i>

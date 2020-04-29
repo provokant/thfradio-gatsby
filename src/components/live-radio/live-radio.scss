@@ -26,7 +26,7 @@
       }
 
       &_volume-bar {
-        @apply bg-primary-100;
+        @apply bg-primary-100 duration-150;
       }
 
       &_volume-indicator {
@@ -34,7 +34,12 @@
       }
 
       &_button-clear {
-        @apply text-primary-700;
+        @apply text-primary-700 duration-150;
+
+        &:hover,
+        &:focus {
+          @apply text-primary-200;
+        }
       }
 
       &_controls-section {
@@ -50,8 +55,22 @@
 
     .rhap {
 
+      &_volume-container {
+
+        &:hover,
+        &:focus {
+          
+          .rhap {
+
+            &_volume-bar {
+              @apply bg-secondary-200;
+            }
+          }
+        }
+      }
+
       &_volume-bar {
-        background-color: rgba(#f8cc76, .2);
+        background-color: rgba(#90adfe, .2);
       }
   
       &_volume-indicator {

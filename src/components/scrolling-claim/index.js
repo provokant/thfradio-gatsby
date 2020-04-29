@@ -14,9 +14,9 @@ export const ScrollingClaim = ({ staticText = "", scrollingText = [], hasLogoHid
       <div className="scrolling-claim__static">
         {staticText}
       </div>
-      <div className="scrolling-claim__scrolling">
+      {scrollingText.length > 0 && <div className="scrolling-claim__scrolling">
         <TextLoop children={scrollingText} />
-      </div>
+      </div>}
     </div>
   )
 }

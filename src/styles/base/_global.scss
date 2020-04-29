@@ -1,5 +1,5 @@
 html, body {
-  @apply font-sans text-black bg-white m-0 p-0;
+  @apply font-sans text-black bg-transparent m-0 p-0;
 }
 
 body {
@@ -7,17 +7,10 @@ body {
 }
 
 main {
+  @apply bg-white;
 
   &.--dark {
     @apply bg-black text-white overflow-x-hidden;
-
-    * {
-      outline-color: theme("colors.secondary.400") !important;
-    }
-  }
-
-  * {
-    outline-color: theme("colors.primary.800") !important;
   }
 }
 
