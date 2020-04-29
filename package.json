@@ -28,6 +28,7 @@
     "gatsby-transformer-sharp": "^2.2.15",
     "gatsby-transformer-yaml": "^2.3.1",
     "is-internal-link": "^1.1.4",
+    "load-script": "^1.0.0",
     "lodash": "^4.17.15",
     "marked": "^1.0.0",
     "moment": "^2.24.0",
@@ -43,6 +44,7 @@
     "react-helmet": "^5.2.1",
     "react-marquee-double": "^0.2.0",
     "react-scroll-parallax": "^2.2.0",
+    "react-soundcloud-widget": "^2.0.4",
     "react-spring": "^8.0.27",
     "react-text-loop": "^2.3.0",
     "tailwindcss": "^1.1.2"

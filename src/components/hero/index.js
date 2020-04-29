@@ -31,9 +31,9 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="hero__title">
-        Dir gefällt was wir machen? Wir freuen uns über deinen Applaus 👏
+        Dir gefällt was wir machen? Wir freuen uns über deinen Applaus <span role="img" ariab-labe="Clapping hands">👏</span>
       </div>
-      <a href="https://clickheretosavetheworld.com/" rel="noopener norefferer" onClick={handleClick} className="hero__button" target="_blank">
+      <a href="https://clickheretosavetheworld.com/" onClick={handleClick} className="hero__button" target="_blank" rel="noopener noreferrer">
         <Confetti active={isActive} config={confettiConfig} className="hero__button__confetti" />
         <span className="hero__button__text">
           {clapped === 0 && <>Clap your hands!</>}

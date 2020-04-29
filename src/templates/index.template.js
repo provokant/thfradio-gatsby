@@ -2,7 +2,7 @@ import React from "react"
 import moment from "moment"
 
 import SEO from "./../components/seo"
-import Shows from "../components/shows"
+import Archive from "../components/archive"
 import FirstImpression from "../components/first-impression"
 import LastImpression from "../components/last-impression"
 import Layout from "../layout"
@@ -17,7 +17,7 @@ const IndexTemplate = () => {
       <SEO title="Startseite" />
       <FirstImpression hasDarkBackground={isNight} />
       <Timetable />
-      <Shows />
+      <Archive />
       <LastImpression />
     </Layout>
   )

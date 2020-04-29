@@ -1,4 +1,4 @@
-.shows {
+.archive {
 
   &__inner {
     @apply grid grid-cols-1 gap-12 mt-10;
@@ -109,7 +109,7 @@
     &:focus {
       @apply border-primary-800;
 
-      .shows {
+      .archive {
 
         &-child {
 
@@ -142,7 +142,7 @@
 
 .--dark {
 
-  .shows {
+  .archive {
     @apply text-white;
 
     &-child {
@@ -160,7 +160,7 @@
       &:focus {
         @apply border-secondary-500;
 
-        .shows {
+        .archive {
 
           &-child {
 

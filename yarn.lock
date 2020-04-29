@@ -9155,6 +9155,11 @@ load-json-file@^2.0.0:
     pify "^2.0.0"
     strip-bom "^3.0.0"
 
+load-script@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
+  integrity sha1-BJGTngvuVkPuSUp+PaPSuscMbKQ=
+
 load-yaml-file@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/load-yaml-file/-/load-yaml-file-0.1.1.tgz#dc9b8e89cee96757f6f15a5707ac53f76aa529e9"
@@ -12290,6 +12295,13 @@ react-side-effect@^1.1.0:
   integrity sha512-v1ht1aHg5k/thv56DRcjw+WtojuuDHFUgGfc+bFHOWsF4ZK6C2V57DO0Or0GPsg6+LSTE0M6Ry/gfzhzSwbc5w==
   dependencies:
     shallowequal "^1.0.1"
+
+react-soundcloud-widget@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/react-soundcloud-widget/-/react-soundcloud-widget-2.0.4.tgz#69663516878d8d52de1d93e4fac062f02a9c60af"
+  integrity sha1-aWY1FoeNjVLeHZPk+sBi8CqcYK8=
+  dependencies:
+    load-script "^1.0.0"
 
 react-spring@^8.0.27:
   version "8.0.27"

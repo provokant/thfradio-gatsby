@@ -33,10 +33,10 @@ export const LiveTicker = () => {
     <div className="live-ticker">
       <Marquee
         step={1}
-        space={0}
+        space={5}
         interval={20}
         autoStart={true}
-        direction={'left'}
+        direction={"left"}
         delay={1000}
       >
         <span dangerouslySetInnerHTML={{ __html: message }} />

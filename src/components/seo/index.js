@@ -64,9 +64,9 @@ function SEO({ title, description = "", meta = [], lang = "en" }) {
         },
       ].concat(meta)}
     >
-      <script src="//widget.mixcloud.com/media/js/footerWidgetApi.js" async>
+      {/* <script src="//widget.mixcloud.com/media/js/footerWidgetApi.js" async>
         {`{"feed": "/thfradio/"}`}
-      </script>
+      </script> */}
       {/* <script src="https://widget.mixcloud.com/media/js/footerWidgetApi.js" />
       <script type="text/javascript">
         {`
