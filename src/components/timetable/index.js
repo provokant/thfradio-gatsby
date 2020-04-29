@@ -16,7 +16,7 @@ export const Timetable = () => {
   return (
     <Section title="timetable">
       <Container>
-        <Headline title="Timetable"/>
+        <Headline title="Programm"/>
         <Paragraph text="Alle kommenden Sendungen für die nächsten zwei Wochen im Überblick" />
         <TimetableWrapper>
           <TimetableGrouped by={weekdaysThisAndNextWeek} />

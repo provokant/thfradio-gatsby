@@ -7,7 +7,7 @@
 
 			<!-- Patterns -->
 			<pattern id="wave" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
-				<path d="M 0 7.5 Q 2.5 7.5 2.5 5 Q 2.5 2.5 5 2.5 Q 7.5 2.5 7.5 5 Q 7.5 7.5 10 7.5"  stroke="black" fill="transparent" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+				<path d="M 0 7.5 Q 2.5 7.5 2.5 5 Q 2.5 2.5 5 2.5 Q 7.5 2.5 7.5 5 Q 7.5 7.5 10 7.5" stroke="currentColor" fill="transparent" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
 			</pattern>
 		</defs>
 

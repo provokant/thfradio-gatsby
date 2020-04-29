@@ -34,18 +34,19 @@
       background-image: linear-gradient(
         90deg, 
         #FAFAFA 70%, 
-        rgba(250,250,250,0)
+        rgba(#FAFAFA, 0)
       );
   
       @apply left-0;
     }
 
     &:after {
+      
       content: "";
       background-image: linear-gradient(
         270deg, 
         #FAFAFA 70%, 
-        rgba(250,250,250,0)
+        rgba(#FAFAFA, 0)
       );
   
       @apply right-0;
@@ -64,6 +65,27 @@
 .--dark {
 
   .header {
-    @apply text-secondary-100 border-gray-900 bg-gray-900;
+    @apply text-white border-secondary-600 bg-gray-900 shadow-md;
+
+    &__ticker {
+
+      &:before {
+        content: "";
+        background-image: linear-gradient(
+          90deg, 
+          #171517 70%, 
+          rgba(#171517, 0)
+        );
+      }
+  
+      &:after {
+        content: "";
+        background-image: linear-gradient(
+          270deg, 
+          #171517 70%, 
+          rgba(#171517, 0)
+        );
+      }
+    }
   }
 }

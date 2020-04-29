@@ -3,7 +3,7 @@
   @apply 
     py-2
     font-mono 
-    text-secondary-700
+    text-primary-700
     whitespace-no-wrap
     overflow-hidden;
 }
@@ -11,6 +11,6 @@
 .--dark {
 
   .live-ticker {
-    @apply bg-gray-600 text-gray-900;
+    @apply bg-transparent text-secondary-300;
   }
 }

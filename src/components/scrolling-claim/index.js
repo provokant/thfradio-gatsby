@@ -11,13 +11,11 @@ export const ScrollingClaim = ({ staticText = "", scrollingText = [], hasLogoHid
       <div className={`scrolling-claim__logo ${hasLogoHiddenOnMobile ? "--hide-on-mobile" : ""}`}>
         <Logo className="h-5xl" isTextOnly={hasLogoTextOnly} />
       </div>
-      <div className="scrolling-claim__inner">
-        <div className="scrolling-claim__inner__static">
-          {staticText}
-        </div>
-        <div className="scrolling-claim__inner__scrolling">
-          <TextLoop children={scrollingText} />
-        </div>
+      <div className="scrolling-claim__static">
+        {staticText}
+      </div>
+      <div className="scrolling-claim__scrolling">
+        <TextLoop children={scrollingText} />
       </div>
     </div>
   )

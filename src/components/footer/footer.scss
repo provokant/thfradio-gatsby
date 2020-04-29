@@ -70,16 +70,12 @@
     @screen lg {
       @apply w-3/5;
     }
+  }
+}
 
-    &__nls {
-      @apply relative inline-block mx-2;
+.--dark {
 
-      &__confetti {
-        top: 50%;
-        left: 50%;
-
-        @apply absolute;
-      }  
-    }
+  .footer {
+    @apply bg-secondary-700 text-white;
   }
 }

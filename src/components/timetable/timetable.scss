@@ -8,11 +8,11 @@
     @apply grid grid-cols-1 border border-gray-500 p-4 mb-10;
 
     @screen lg {
-      @apply grid-cols-2 gap-4 mb-12;
+      @apply grid-cols-2 gap-16 mb-12;
     }
 
     &__title {
-      @apply flex justify-between bg-gray-900 text-white text-lg p-4;
+      @apply flex justify-between text-lg mb-8;
 
       &__sub {
         @apply ml-2 font-light;
@@ -21,16 +21,6 @@
 
     &.--variant {
       @apply opacity-50;
-
-      .timetable {
-        
-        &__group {
-
-          &__title {
-            
-          }
-        }
-      }
     }
 
     &.--passed {
@@ -97,10 +87,22 @@
   .timetable {
 
     &__group {
+      @apply border-gray-800;
+    }
 
-      &.--variant {
+    &__child {
 
-        @apply text-primary-600;
+      &__summary {}
+
+      &__date {
+        @apply text-gray-500;
+
+        &__icon {
+        }
+
+        span {
+          @apply text-gray-300;
+        }
       }
     }
   }

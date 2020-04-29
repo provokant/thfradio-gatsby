@@ -7,7 +7,7 @@
       min-width: 130px;
     }
 
-    @apply bg-transparent shadow-none py-4 px-0 text-secondary-700;
+    @apply bg-transparent shadow-none py-4 px-0 text-primary-700;
 
     .rhap {
 
@@ -26,15 +26,15 @@
       }
 
       &_volume-bar {
-        @apply bg-secondary-200;
+        @apply bg-primary-100;
       }
 
       &_volume-indicator {
-        @apply bg-white border border-secondary-700 shadow-none;
+        @apply bg-white border border-primary-700 shadow-none;
       }
 
       &_button-clear {
-        @apply text-secondary-700;
+        @apply text-primary-700;
       }
 
       &_controls-section {
@@ -42,4 +42,25 @@
       }
     }
   }
+}
+
+.--dark {
+  .live-radio {
+    @apply text-secondary-700;
+
+    .rhap {
+
+      &_volume-bar {
+        background-color: rgba(#f8cc76, .2);
+      }
+  
+      &_volume-indicator {
+        @apply bg-black border-secondary-400;
+      }
+  
+      &_button-clear {
+        @apply text-secondary-400;
+      }
+    }
+  }  
 }

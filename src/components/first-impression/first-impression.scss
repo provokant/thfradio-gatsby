@@ -1,38 +1,61 @@
 .first-impression {
-  min-height: 80vh;
+  min-height: 90vh;
 
-  @apply flex flex-col justify-center mb-12;
-
-  &__button {
-    @apply mt-20 mb-24 text-center;
-  }
+  @apply relative flex flex-col justify-center mb-12 text-white overflow-x-hidden pt-32 pb-48;
 
   &__claim {
-    @apply mb-8 text-center;
+    @apply text-center;
 
     @screen lg {
-      @apply text-left mb-0;
+      @apply text-left w-2/3;
+    }
+  }
+
+  &__icon {
+    @apply w-40 my-8 mx-auto overflow-hidden;
+
+    @screen lg {
+      @apply w-48 mx-0;
+    }
+  }
+
+  &__wave {
+    @apply absolute bottom-0 inset-x-0 mx-auto text-white;
+
+    @screen lg {
+      max-height: theme("screens.lg");
+    }
+
+    @screen xl {
+      max-height: theme("screens.xl");
     }
   }
 
   &__paragraph {
-    @apply font-mono;
+    // @apply font-mono;
   }
 
   &::before {
-    background-blend-mode: screen;
-    opacity: 0.2 !important;
-
-    @apply bg-secondary-700;
+    @apply bg-primary-900;
+    
+    background-blend-mode: soft-light;
   }
 }
 
 .--dark {
+
+  .first-impression {
+    @apply text-black;
+
+    &__wave {
+      @apply text-black;
+    }
+  }
   
   .first-impression.first-impression {
 
     &::before {
-      @apply bg-primary-800 opacity-60;
+      background-color: #f7e0a9;
     }
   }
 }

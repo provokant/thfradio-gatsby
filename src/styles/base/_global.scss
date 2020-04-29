@@ -7,8 +7,17 @@ body {
 }
 
 main {
+
   &.--dark {
-    @apply bg-gray-900 text-secondary-100;
+    @apply bg-black text-white overflow-x-hidden;
+
+    * {
+      outline-color: theme("colors.secondary.400") !important;
+    }
+  }
+
+  * {
+    outline-color: theme("colors.primary.800") !important;
   }
 }
 
@@ -63,9 +72,9 @@ a {
 }
 
 section {
-  @apply py-24;
+  @apply py-12;
 
   @screen lg {
-    @apply py-48;
+    @apply py-20;
   }
 }

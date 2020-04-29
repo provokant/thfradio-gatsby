@@ -1,6 +1,7 @@
 import { graphql } from "gatsby"
 import React from "react"
 import marked from "marked"
+import moment from "moment"
 
 import Layout from "../layout"
 import SEO from "../components/seo"
@@ -15,8 +16,11 @@ export default class ContentPage extends React.Component {
     const { title, description, text } = contentfulStaticPage
     const markdown = marked(text.text)
 
+    const currentHour = parseFloat(moment().format("HH"))
+    const isNight = currentHour > 18 || currentHour < 7
+
     return (
-      <Layout>
+      <Layout applyDarkMode={isNight}>
         <SEO title={title} description={description} lang={lang}></SEO>
         <Section title="content">
           <Container>
