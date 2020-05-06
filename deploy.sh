@@ -24,5 +24,5 @@ else
 	echo "FAILED TO DEPLOY"
 	echo "RESTORING BACKUP ..."
 	rm -r public
-	mv -r $BACKUP public
+	mv $BACKUP public
 fi
