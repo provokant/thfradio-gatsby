@@ -12,13 +12,17 @@ echo "UPDATING REPO ..."
 
 git pull
 
+echo "DELETING INSTALLED DEPENDENCIES ..."
+
+rm -rf node_mdcules
+
 echo "INSTALLING DEPENDENCIES ..."
 
-npm install
+$(which npm) install
 
 echo "STARTING BUILD ...";
 
-if npm run build ; then
+if $(which npm) run build ; then
 	echo "SUCCESSFULLY DEPLOYED"
 else 
 	echo "FAILED TO DEPLOY"
