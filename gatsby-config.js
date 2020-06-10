@@ -3,7 +3,8 @@ require(`dotenv`).config()
 
 const { 
   CONTENTFUL_ACCESS_TOKEN, 
-  CONTENTFUL_SPACE_ID
+  CONTENTFUL_SPACE_ID,
+  CONTENTFUL_HOST
 } = process.env
 
 const plugins = [
@@ -63,6 +64,7 @@ const plugins = [
     options: {
       spaceId: CONTENTFUL_SPACE_ID,
       accessToken: CONTENTFUL_ACCESS_TOKEN,
+      host: CONTENTFUL_HOST
     },
   },
   {
