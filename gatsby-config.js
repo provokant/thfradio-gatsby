@@ -88,7 +88,7 @@ const plugins = [
 // module.exports = client.getEntries().then(() => {
   module.exports = {
     siteMetadata: {
-      author: `Michael Czechowski <mail@dailysh.it>`,
+      author: `Michael Czechowski <maiql@dailysh.it>`,
       description: `THF Radio ist die Radiostation im ehemaligen Pförtnerinnenhaus am Flughafen Tempelhof. Experimentierraum und Sprachrohr für Bürger*innen, Künstler*innen, Musiker*innen, Kreative und Initiativen.`,
       lang: `de`,
       title: `THF Radio`,

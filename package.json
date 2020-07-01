@@ -57,7 +57,7 @@
   ],
   "scripts": {
     "clean": "gatsby clean",
-    "build": "gatsby clean && gatsby build",
+    "build": "gatsby clean && node --max-old-space-size=120000 --stack-size=100000 ./node_modules/gatsby/dist/bin/gatsby.js build",
     "start": "gatsby clean && ENABLE_GATSBY_REFRESH_ENDPOINT=true gatsby develop",
     "host": "gatsby develop -H 0.0.0.0",
     "serve": "gatsby serve",
