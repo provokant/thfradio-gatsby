@@ -14,7 +14,7 @@ git pull
 
 echo "DELETING INSTALLED DEPENDENCIES ..."
 
-rm -rf node_mdcules
+rm -rf node_modules
 
 echo "INSTALLING DEPENDENCIES ..."
 

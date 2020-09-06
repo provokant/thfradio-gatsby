@@ -18,7 +18,7 @@ const IndexTemplate = () => {
       <FirstImpression hasDarkBackground={isNight} />
       <Timetable />
       <Archive isDarkMode={isNight} />
-      <LastImpression />
+      {/* <LastImpression /> */}
     </Layout>
   )
 }
