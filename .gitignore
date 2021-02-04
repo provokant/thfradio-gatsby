@@ -39,6 +39,9 @@ jspm_packages/
 # Backups
 *.bak
 
+# IDE
+.idea
+
 # Gatsby Plugins
 plugins/
 
@@ -71,5 +74,9 @@ public*
 yarn-error.log
 .pnp/
 .pnp.js
+
 # Yarn Integrity file
 .yarn-integrity
+
+# pnpm
+pnpm-lock.yaml
