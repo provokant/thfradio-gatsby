@@ -19,7 +19,7 @@ export const FirstImpression = () => {
     >
       <Container>
         <div className="first-impression__claim">
-          <ScrollingClaim staticText="ist ein Community Radio im TORHAUS am Flughafen Tempelhof" />
+          <ScrollingClaim staticText="Wir sind ein Community Radio im Torhaus am Flughafen Tempelhof" />
         </div>
       </Container>
     </BackgroundImage>

@@ -1,6 +1,6 @@
 .footer {
   @apply 
-    pt-48
+    pt-40
     pb-10
 
     bg-primary-700
@@ -65,10 +65,10 @@
   }
 
   &__credits {
-    @apply w-2/3 opacity-100 font-mono my-20 mx-auto text-center;
+    @apply w-2/3 opacity-100 font-mono mt-10 mb-20 mx-auto text-center;
 
     @screen lg {
-      @apply w-3/5;
+      @apply w-3/5 my-20;
     }
   }
 }

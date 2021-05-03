@@ -1,12 +1,12 @@
 .headline {
-  @apply text-center;
+  @apply text-center font-mono uppercase;
 
   @screen lg {
     @apply text-left;
   }
 
   &__sub {
-    @apply text-base font-mono text-primary-500 mb-4;
+    @apply text-base text-primary-500 mb-4;
   }
 
   &__title {

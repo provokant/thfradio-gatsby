@@ -4,6 +4,9 @@ import { Link } from "gatsby"
 import Navigation from "./../navigation"
 import Container from "./../container"
 import Logo from "./../logo"
+import LogoDark from '../logo/logoDark'
+import useLogoImages from "./../logo/logo-hook-images"
+
 
 import "./footer.scss"
 import useAllStaticLinks from "./footer-hook-use-all-static-links"
@@ -34,7 +37,7 @@ export const Footer = () => {
           }
         </div>
         <div className="footer__logo">
-          <Logo isInverted/>
+          <LogoDark isInverted/>
         </div>
       </Container>
       <Container>

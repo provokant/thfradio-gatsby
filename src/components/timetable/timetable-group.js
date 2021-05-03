@@ -27,10 +27,10 @@ export const TimetableGroupTitlePrefix = ({ date }) => {
   return (
     <>
       {diffDays > 0 && "Letzten "}
-      {(diffWeeks === 0 && diffDays <= 0) && "Diesen "}
-      {diffWeeks === -1 && "Nächsten "}
-      {diffWeeks === -2 && "Übernächsten "}
-      {diffWeeks < -2 && "Irgendein "}
+      {(diffWeeks === 0 && diffDays <= 0) && " "}
+      {diffWeeks === -1 && " "}
+      {diffWeeks === -2 && " "}
+      {diffWeeks < -2 && " "}
     </>
   )
 }

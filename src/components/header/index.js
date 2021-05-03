@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 
 import Logo from "../logo"
+import LogoImage from "../logo/logoImage"
 import Navigation from "../navigation"
 import LiveRadio from "../live-radio"
 import Container from "../container"
@@ -17,7 +18,7 @@ const Header = () => {
     <header className="header">
       <Container>
         <div className="header__logo">
-          <Logo />
+          <LogoImage />
         </div>
         <nav role="navigation" className="header__nav">
           <Navigation />

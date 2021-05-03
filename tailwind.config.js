@@ -46,9 +46,10 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Montserrat", ...fontFamily.sans],
-      mono: ["Roboto Mono", ...fontFamily.mono]
+      sans: ["Neue Machina", ...fontFamily.sans],
+      mono: ["Space Mono", ...fontFamily.mono],
     },
+    
     fontSize: {
       xs: "0.725rem",     // 14px
       sm: "1rem",         // 16px

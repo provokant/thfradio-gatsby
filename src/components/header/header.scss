@@ -1,5 +1,5 @@
 .header {
-  @apply fixed top-0 inset-x-0 z-10 bg-white border-b border-gray-400 font-sans;
+  @apply fixed top-0 inset-x-0 z-10 bg-white border-b border-gray-400 font-mono;
 
   .container {
     @apply flex flex-initial items-center justify-between;
@@ -9,7 +9,7 @@
     @apply flex flex-none items-center flex-initial mr-2 text-3xl;
 
     @screen lg {
-      @apply mr-8;
+      @apply mr-12;
     }
   }
 

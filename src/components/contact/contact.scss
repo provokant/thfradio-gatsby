@@ -1,0 +1,81 @@
+.contact {
+    @apply grid grid-cols-1 justify-items-center gap-2 pt-2 pb-5;
+
+    @screen lg {
+        @apply justify-items-start grid-cols-4 pt-5 pb-10;
+      }
+}
+
+.english {
+    @apply text-center mb-2 opacity-90 text-sm font-light;
+  
+    @screen lg {
+      @apply text-left text-base;
+    }
+  
+    &.--small {
+      @apply text-sm;
+  
+      @screen lg {
+        @apply text-base;
+      }
+    }
+  
+    &.--large {
+      @apply text-lg;
+  
+      @screen lg {
+        @apply text-xl;
+      }
+    }
+  
+    &.--narrow {
+      @apply mx-auto;
+  
+      @screen lg {
+        @apply mx-0 w-2/3;
+      }
+    }
+  }
+
+  .form {
+    @apply text-base mb-2;
+
+    @screen lg {
+        @apply text-base;
+      }
+}
+
+  .form-english {
+    @apply opacity-90 text-sm font-light;
+  
+    @screen lg {
+      @apply text-left text-sm;
+    }
+  
+    &.--small {
+      @apply text-sm;
+  
+      @screen lg {
+        @apply text-base;
+      }
+    }
+  
+    &.--large {
+      @apply text-lg;
+  
+      @screen lg {
+        @apply text-xl;
+      }
+    }
+  
+    &.--narrow {
+      @apply mx-auto;
+  
+      @screen lg {
+        @apply mx-0 w-2/3;
+      }
+    }
+  }
+
+

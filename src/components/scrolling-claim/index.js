@@ -9,7 +9,7 @@ export const ScrollingClaim = ({ staticText = "", scrollingText = [], hasLogoHid
   return (
     <div className="scrolling-claim">
       <div className={`scrolling-claim__logo ${hasLogoHiddenOnMobile ? "--hide-on-mobile" : ""}`}>
-        <Logo className="h-5xl" isTextOnly={hasLogoTextOnly} />
+        {/* <Logo className="h-5xl" isTextOnly={hasLogoTextOnly} /> */}
       </div>
       <div className="scrolling-claim__static">
         {staticText}

@@ -43,7 +43,7 @@ const Archive = ({ isDarkMode = false }) => {
         }
       <Container>
         <Headline title="Archiv"/>
-        <Paragraph text="Alle vergangen Sendungen zum Nachhören" />
+        {/* <Paragraph text="Alle vergangen Sendungen zum Nachhören" /> */}
         <ArchiveContainer>
           <ArchiveChildren />
         </ArchiveContainer>

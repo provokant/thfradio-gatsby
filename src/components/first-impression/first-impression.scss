@@ -1,10 +1,10 @@
 .first-impression {
   min-height: 70vh;
 
-  @apply relative flex flex-col justify-center mb-12 text-white overflow-x-hidden pb-48 pt-64;
+  @apply relative flex flex-col font-sans justify-center mb-12 text-white overflow-x-hidden pb-48 pt-64;
 
   &__claim {
-    @apply text-center;
+    @apply text-center font-light leading-relaxed;
 
     @screen lg {
       @apply text-left w-3/4;
