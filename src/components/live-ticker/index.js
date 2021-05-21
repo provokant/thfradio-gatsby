@@ -39,7 +39,7 @@ export const LiveTicker = () => {
         direction={"left"}
         delay={1000}
       >
-        <span dangerouslySetInnerHTML={{ __html: message }} />
+        <span dangerouslySetInnerHTML={{ __html: message }}/>
       </Marquee>
     </div>
   )

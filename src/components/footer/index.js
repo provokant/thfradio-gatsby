@@ -3,9 +3,7 @@ import { Link } from "gatsby"
 
 import Navigation from "./../navigation"
 import Container from "./../container"
-import Logo from "./../logo"
-import LogoDark from '../logo/logoDark'
-import useLogoImages from "./../logo/logo-hook-images"
+import LogoDark from '../logo/logo-dark'
 
 
 import "./footer.scss"
@@ -26,14 +24,14 @@ export const Footer = () => {
       <Container>
         <div className="footer__nav">
           <div className="footer__nav__main">
-            <Navigation />
+            <Navigation/>
           </div>
-          {staticPageLinks && 
-            <ul className="footer__nav__secondary">
-              {staticPageLinks.map((link, n) => (
-                <li key={n}>{link}</li>
-              ))}
-            </ul>
+          {staticPageLinks &&
+          <ul className="footer__nav__secondary">
+            {staticPageLinks.map((link, n) => (
+              <li key={n}>{link}</li>
+            ))}
+          </ul>
           }
         </div>
         <div className="footer__logo">
@@ -42,7 +40,10 @@ export const Footer = () => {
       </Container>
       <Container>
         <div className="footer__credits">
-          Diese Webseite wurde entwickelt von <a href="//dailysh.it" target="_blank" rel="noopener noreferrer"><nobr>NEXT LEVEL SHIT</nobr></a> unter dem Einsatz von Open-Source Software. Der <a href="//github.com/nextlevelshit/nls-gatsby-thfradio">Code ist frei verfügbar auf GitHub</a>.
+          Diese Webseite wurde entwickelt von <a href="//dailysh.it" target="_blank" rel="noopener noreferrer">
+          <nobr>NEXT LEVEL SHIT</nobr>
+        </a> unter dem Einsatz von Open-Source Software. Der <a href="//github.com/nextlevelshit/nls-gatsby-thfradio">Code
+          ist frei verfügbar auf GitHub</a>.
         </div>
       </Container>
     </footer>

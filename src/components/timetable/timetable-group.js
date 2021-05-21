@@ -9,16 +9,16 @@ moment.updateLocale("de", localization)
 
 export const TimetableGrouped = ({ by }) => by &&
   Object.entries(by).map(([date, shows], i) => (
-    <div role="presentation" className={`
+      <div role="presentation" className={`
       timetable__group
       ${moment().diff(moment(date), "week") % 2 !== 0 ? " --variant" : ""}
       ${moment().diff(moment(date), "day") > 0 ? " --passed" : ""}
     `}>
-      <TimetableGroupTitle date={date} />
-      <TimetableChildren shows={shows} key={i} />
-    </div>
+        <TimetableGroupTitle date={date}/>
+        <TimetableChildren shows={shows} key={i}/>
+      </div>
+    )
   )
-)
 
 export const TimetableGroupTitlePrefix = ({ date }) => {
   const diffWeeks = moment().diff(date, "week")
@@ -48,11 +48,11 @@ export const TimetableGroupTitleSuffix = ({ date }) => (
 export const TimetableGroupTitle = ({ date }) =>
   <div className="timetable__group__title">
     <div className="timetable__group__title__dom">
-      <TimetableGroupTitlePrefix date={date} />
-      <TimetableGroupTitleWeekday date={date} />
-      <TimetableGroupTitleSuffix date={date} />
+      <TimetableGroupTitlePrefix date={date}/>
+      <TimetableGroupTitleWeekday date={date}/>
+      <TimetableGroupTitleSuffix date={date}/>
     </div>
-    
+
     <div className="timetable__group__title__sub">
       {moment(date).format("DD.MM.YYYY")}
     </div>

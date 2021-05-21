@@ -3,7 +3,7 @@ import React from "react"
 import IndexTemplate from "./../templates/index.template"
 
 const IndexPage = () => (
-  <IndexTemplate />
+  <IndexTemplate/>
 )
 
 export default IndexPage

@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 const useAllArchive = () => {
   const { allShow } = useStaticQuery(graphql`
@@ -28,7 +28,7 @@ const useAllArchive = () => {
 
   const { archive } = allShow
 
-  const archiveSorted = archive.sort((a, b) => { 
+  const archiveSorted = archive.sort((a, b) => {
     return new Date(b.date) - new Date(a.date)
   })
 

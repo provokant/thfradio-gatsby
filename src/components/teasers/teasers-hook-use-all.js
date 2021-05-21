@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 const useAllTeasers = () => {
   const { allTeasersYaml } = useStaticQuery(graphql`

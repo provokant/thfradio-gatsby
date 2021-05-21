@@ -1,7 +1,5 @@
 import React, { useContext } from "react"
-
-import Logo from "../logo"
-import LogoImage from "../logo/logoImage"
+import LogoImage from "../logo/logo-image"
 import Navigation from "../navigation"
 import LiveRadio from "../live-radio"
 import Container from "../container"
@@ -18,16 +16,16 @@ const Header = () => {
     <header className="header">
       <Container>
         <div className="header__logo">
-          <LogoImage />
+          <LogoImage/>
         </div>
         <nav role="navigation" className="header__nav">
-          <Navigation />
+          <Navigation/>
         </nav>
         <div className="header__ticker">
-          <LiveTicker />
+          <LiveTicker/>
         </div>
         <div className="header__live">
-          {isArchivePlayerPlaying ? "ARCHIVE PLAYING…" : <LiveRadio />}
+          {isArchivePlayerPlaying ? "ARCHIVE PLAYING…" : <LiveRadio/>}
         </div>
       </Container>
     </header>

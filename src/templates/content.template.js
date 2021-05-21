@@ -25,7 +25,7 @@ export default class ContentPage extends React.Component {
         <Section title="content">
           <Container>
             <h1>{title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: markdown }} />
+            <div dangerouslySetInnerHTML={{ __html: markdown }}/>
           </Container>
         </Section>
       </Layout>

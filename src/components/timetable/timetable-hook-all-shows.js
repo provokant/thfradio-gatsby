@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import { groupBy } from "lodash"
 import moment from "moment"
 
@@ -46,19 +46,19 @@ export const useAllShows = () => {
   const weekdaysThisAndNextWeek = groupBy(allThisAndNextWeek, ({ start }) =>
     moment(start).startOf('day')
   )
-  const nowPlaying = allUpcoming.find(({ start, end }) => 
+  const nowPlaying = allUpcoming.find(({ start, end }) =>
     moment().isBetween(start, end)
   )
   const nextPlaying = allUpcoming
     .filter(({ start }) => moment().diff(start) < 0)
     .sort((a, b) => {
-      return moment().diff(moment(b.start)) - moment().diff(moment(a.start))  
+      return moment().diff(moment(b.start)) - moment().diff(moment(a.start))
     })[0]
 
-  return { 
-    showsAll, 
-    allGroupedWeekdays, 
-    allUpcoming, 
+  return {
+    showsAll,
+    allGroupedWeekdays,
+    allUpcoming,
     weekdaysAllUpcoming,
     weekdaysThisAndNextWeek,
     nowPlaying,

@@ -2,39 +2,35 @@ import React, { useContext } from "react"
 import Img from "gatsby-image"
 import moment from "moment"
 
-import {
-  GlobalDispatchContext,
-  GlobalStateContext,
-} from "../../context/global-context-provider"
+import { GlobalDispatchContext, GlobalStateContext, } from "../../context/global-context-provider"
 import PlayCircle from "../../images/play-circle.svg"
 
 import "./archive.scss"
 
 const ShowsChild = ({
-  date, 
+  date,
   name,
   pictures,
   url
 }) => {
   const dispatch = useContext(GlobalDispatchContext)
-  
+
   const { archivePlays } = useContext(GlobalStateContext)
   const isPlaying = archivePlays === url
-                                                                          
+
   const togglePlayer = () => {
     dispatch({ type: "TOGGLE_ARCHIVE_PLAYER", payload: url })
   }
 
   return (
     <>
-      {/* // eslint-disable-next-line */}
       <button className={`archive-child ${isPlaying ? "--active" : ""}`} role="play" onClick={togglePlayer}>
         <div className="archive-child__cover">
           <div className="archive-child__cover__image">
-            {pictures && <Img fluid={pictures.childImageSharp.fluid} />}
+            {pictures && <Img fluid={pictures.childImageSharp.fluid}/>}
           </div>
           <div className="archive-child__cover__icon">
-            <PlayCircle />
+            <PlayCircle/>
           </div>
         </div>
         <div className="archive-child__content">

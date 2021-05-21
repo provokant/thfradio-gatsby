@@ -1,7 +1,7 @@
 import React from "react"
 
-export const GlobalStateContext = React.createContext()
-export const GlobalDispatchContext = React.createContext()
+export const GlobalStateContext = React.createContext(undefined)
+export const GlobalDispatchContext = React.createContext(undefined)
 
 const initialState = {
   theme: "light",
@@ -20,13 +20,13 @@ function reducer(state, action) {
       }
     }
     case "PAUSE_LIVE_RADIO": {
-      return { 
+      return {
         ...state,
         isLiveRadioPlaying: false
       }
     }
     case "PlAY_LIVE_RADIO": {
-      return { 
+      return {
         ...state,
         isLiveRadioPlaying: true,
         archivePlays: null
@@ -37,11 +37,11 @@ function reducer(state, action) {
         ? null
         : action.payload
 
-      const isLiveRadioPlaying = !state.archivePlays 
-        ? false 
+      const isLiveRadioPlaying = !state.archivePlays
+        ? false
         : state.isLiveRadioPlaying
 
-      return { 
+      return {
         ...state,
         archivePlays,
         isLiveRadioPlaying
@@ -54,7 +54,7 @@ function reducer(state, action) {
 
 const GlobalContextProvider = ({ children }) => {
   const [state, dispatch] = React.useReducer(reducer, initialState)
-  
+
   return (
     <GlobalStateContext.Provider value={state}>
       <GlobalDispatchContext.Provider value={dispatch}>

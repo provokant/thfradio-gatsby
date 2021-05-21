@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 export const useAllStaticLinks = () => {
   const { allSitePage } = useStaticQuery(graphql`
@@ -17,10 +17,10 @@ export const useAllStaticLinks = () => {
 
   const { allLinks } = allSitePage
 
-  const allLinksByLang = (lang) => 
+  const allLinksByLang = (lang) =>
     allLinks.filter(({ context }) => context.lang === lang)
 
-  return { 
+  return {
     allLinks,
     allLinksByLang
   }

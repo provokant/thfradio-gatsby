@@ -11,7 +11,7 @@ export const FirstImpression = () => {
   const { imageDefault } = useBackgroundImages()
 
   return (
-    <BackgroundImage 
+    <BackgroundImage
       Tag="section"
       id="first-impression"
       className="first-impression"
@@ -19,7 +19,7 @@ export const FirstImpression = () => {
     >
       <Container>
         <div className="first-impression__claim">
-          <ScrollingClaim staticText="Wir sind ein Community Radio im Torhaus am Flughafen Tempelhof" />
+          <ScrollingClaim staticText="Wir sind ein Community Radio im Torhaus am Flughafen Tempelhof"/>
         </div>
       </Container>
     </BackgroundImage>

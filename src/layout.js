@@ -9,11 +9,11 @@ export const Layout = ({ applyDarkMode = false, children }) => {
   return (
     <>
       <main className={applyDarkMode ? "--dark" : ""}>
-        <Header />
+        <Header/>
         <article>
           {children}
         </article>
-        <Footer />
+        <Footer/>
       </main>
     </>
   )

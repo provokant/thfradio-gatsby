@@ -6,14 +6,11 @@ import PauseCircle from "../../images/pause-circle.svg"
 import Volume from "../../images/volume.svg"
 import VolumeMute from "../../images/volume-mute.svg"
 
-import {
-  GlobalDispatchContext,
-  GlobalStateContext,
-} from "../../context/global-context-provider"
+import { GlobalDispatchContext, GlobalStateContext, } from "../../context/global-context-provider"
 
 import "./live-radio.scss"
 
-export const LiveRadio = () => {  
+export const LiveRadio = () => {
   const dispatch = useContext(GlobalDispatchContext)
   const { archivePlays, isPlaying } = useContext(GlobalStateContext)
   const player = useRef(null)
@@ -23,17 +20,17 @@ export const LiveRadio = () => {
   }
   if (isPlaying && player.current) {
     console.log(player.current.audio.current)
-  } 
+  }
 
   return (
     <AudioPlayer
       src={process.env.GATSBY_LIVE_RADIO_API}
       layout="horizontal"
-      customIcons={{ 
-        play: <PlayCircle />,
-        pause: <PauseCircle />,
-        volume: <Volume />,
-        volumeMute: <VolumeMute /> 
+      customIcons={{
+        play: <PlayCircle/>,
+        pause: <PauseCircle/>,
+        volume: <Volume/>,
+        volumeMute: <VolumeMute/>
       }}
       customAdditionalControls={[]}
       customProgressBarSection={[]}

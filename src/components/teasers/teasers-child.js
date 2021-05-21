@@ -3,12 +3,11 @@ import React from "react"
 import Headline from "./../headline"
 import Paragraph from "../paragraph"
 // import Image from "../../atoms/image/image.atom"
-
 import "./teasers-child.scss"
 
-const TeasersChild = ({ 
+const TeasersChild = ({
   uid,
-  headline, 
+  headline,
   subheadline,
   copytext,
   imageSrc,
@@ -21,7 +20,7 @@ const TeasersChild = ({
       <div className={`container ${hasTextRight ? "--has-text-right" : ""}`}>
         <div className="teaser-child__column">
           <Headline title={headline} sub={subheadline}></Headline>
-          <Paragraph text={copytext} isNarrow />
+          <Paragraph text={copytext} isNarrow/>
         </div>
         <div className="teaser-child__column">
           {/* <Image path={imageSrc} alt={imageAlt} /> */}

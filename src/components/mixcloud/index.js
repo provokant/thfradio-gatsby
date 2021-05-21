@@ -26,9 +26,9 @@ export class Mixcloud extends React.Component {
     })
   }
 
-  render () {
-    return(
-      <iframe ref={this.iframe} />
+  render() {
+    return (
+      <iframe ref={this.iframe}/>
     )
   }
 }

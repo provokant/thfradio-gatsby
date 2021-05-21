@@ -12,9 +12,10 @@ const Navigation = () => {
     <ul className="nav">
       {navList && navList.map(({ url, title }, n) => (
         <li className="nav__item" key={n}>
-          {isInternal(url) 
-            ? <AnchorLink to={url} title={title} className="nav__item__link" />
-            : <a href={url} target="_blank" rel="noopener noreferrer" title={title} className="nav__item__link">{title}</a>
+          {isInternal(url)
+            ? <AnchorLink to={url} title={title} className="nav__item__link"/>
+            : <a href={url} target="_blank" rel="noopener noreferrer" title={title}
+                 className="nav__item__link">{title}</a>
           }
         </li>
       ))}

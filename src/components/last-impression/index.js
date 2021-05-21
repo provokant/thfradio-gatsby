@@ -9,7 +9,7 @@ const LastImpression = () => {
   return (
     <section className="last-impression">
       <Container>
-        <Hero />
+        <Hero/>
       </Container>
     </section>
   )

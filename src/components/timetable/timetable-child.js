@@ -11,7 +11,7 @@ export const TimetableChild = ({ summary, start, end, uid }) => {
   const TCDate = () =>
     <div className="timetable__child__date">
       {moment(start).format("HH:mm")}
-      <WaveIcon className="timetable__child__date__icon" />
+      <WaveIcon className="timetable__child__date__icon"/>
       {moment(end).format("HH:mm")}
     </div>
 
@@ -27,8 +27,8 @@ export const TimetableChild = ({ summary, start, end, uid }) => {
 
   return (
     <TCContainer>
-      <TCDate />
-      <TCSummary />
+      <TCDate/>
+      <TCSummary/>
     </TCContainer>
   )
 }

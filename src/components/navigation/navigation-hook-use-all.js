@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 const useAllNavLinks = () => {
   const { allNavigationYaml } = useStaticQuery(graphql`
