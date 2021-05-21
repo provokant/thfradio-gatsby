@@ -2,7 +2,6 @@ import React from "react"
 
 import Container from "../container"
 import Headline from "../headline"
-import Paragraph from "../paragraph"
 import Section from "../section"
 
 import "./timetable.scss"
@@ -17,7 +16,6 @@ export const Timetable = () => {
     <Section title="timetable">
       <Container>
         <Headline title="Programm"/>
-        {/* <Paragraph text="Alle kommenden Sendungen für die nächsten zwei Wochen im Überblick" /> */}
         <TimetableWrapper>
           <TimetableGrouped by={weekdaysThisAndNextWeek} />
         </TimetableWrapper>
