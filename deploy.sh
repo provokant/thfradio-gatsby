@@ -18,7 +18,7 @@ rm -rf node_modules
 
 echo "INSTALLING DEPENDENCIES ..."
 
-$(which npm) install
+$(which npm) install --no-audit --progress=false --prefer-offline
 
 echo "STARTING BUILD ...";
 
