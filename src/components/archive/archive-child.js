@@ -24,7 +24,7 @@ const ShowsChild = ({
 
   return (
     <>
-      <button className={`archive-child ${isPlaying ? "--active" : ""}`} role="play" onClick={togglePlayer}>
+      <button className={`archive-child ${isPlaying ? "--active" : ""}`} onClick={togglePlayer}>
         <div className="archive-child__cover">
           <div className="archive-child__cover__image">
             {pictures && <Img fluid={pictures.childImageSharp.fluid}/>}
