@@ -11,7 +11,7 @@ const Contact = () => {
       <Paragraph text=
                    "THF Radio ist die Radiostation im ehemaligen Pförtnerinnenhaus am Flughafen Tempelhof. Experimentierraum und Sprachrohr für Bürgerinnen, Künstlerinnen, Musiker*innen, Kreative und Initiativen. Wir sind Teil des TORHAUSES am Flughafen Tempelhof. THF Radio ist als experimentelles Forum gedacht: Wir wollen den Flughafen und seine Geschichte thematisieren und Künstler*innen in der Stadt eine Plattform geben."/>
       <Paragraph text=
-                   "Schickst du uns eine Nachricht für allgemeine Anfragen zum:"/>
+                   "Schick uns eine Nachricht für allgemeine Anfragen an:"/>
       <div className="english">Send us a message for any general inquiries about:</div>
       <div className="contact">
         <div><ButtonExternal href="mailto:info@thfradio.de?subject=Anfragen zum THF Radio">THF Radio</ButtonExternal>
