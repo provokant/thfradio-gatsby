@@ -26,7 +26,8 @@ export const useAllShows = () => {
   `)
 
 
-  const { showsAll } = allIcal
+let showsAll;
+moment().isDST() ? showsAll = allIcal.showsAll.map(x=>({...x, start:moment(x.start).add(moment().utcOffset(),'m'), end:moment(x.end).add(moment().utcOffset(),'m')})) : {showsAll}=allIcal
 
   const allGroupedWeekdays = groupBy(showsAll, ({ start }) =>
     moment(start).startOf('day')
