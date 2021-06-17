@@ -8,6 +8,9 @@ module.exports = {
       },
     },
     colors: {
+      thfBlue: "#1200FF",
+      thfOrange: "#FF6314",
+      thfDarkBlue: "#160949",
       black: "#171517",
       white: "#FAFAFA",
       transparent: "transparent",
@@ -85,6 +88,8 @@ module.exports = {
       "2": "2px",
       "3": "3px",
       "4": "4px",
+      "8": "4px",
+
     },
     borderRadius: {
       none: "0",

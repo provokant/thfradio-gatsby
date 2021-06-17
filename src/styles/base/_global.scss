@@ -7,7 +7,7 @@ body {
 }
 
 main {
-  @apply bg-white;
+  @apply ;
 
   &.--dark {
     @apply bg-black text-white overflow-x-hidden;

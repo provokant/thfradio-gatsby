@@ -1,7 +1,7 @@
 .first-impression {
   min-height: 70vh;
 
-  @apply relative flex flex-col font-sans justify-center mb-12 text-white overflow-x-hidden pb-48 pt-64;
+  @apply bg-thfBlue relative flex flex-col font-sans justify-center mb-12 text-white overflow-x-hidden pb-48 pt-64;
 
   &__claim {
     @apply text-center font-light leading-relaxed;

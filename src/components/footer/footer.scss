@@ -3,7 +3,7 @@
     pt-40
     pb-10
 
-    bg-primary-700
+    bg-thfBlue
     text-white;
 
   @screen lg {
@@ -76,6 +76,6 @@
 .--dark {
 
   .footer {
-    @apply bg-secondary-700 text-white;
+    @apply bg-thfBlue text-white;
   }
 }
