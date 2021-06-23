@@ -21,13 +21,17 @@ const Header = () => {
         <nav role="navigation" className="header__nav">
           <Navigation/>
         </nav>
-        <div className="header__ticker">
-          <LiveTicker/>
-        </div>
         <div className="header__live">
           {isArchivePlayerPlaying ? "ARCHIVE PLAYING…" : <LiveRadio/>}
         </div>
       </Container>
+      <div className="bg-white">
+        <Container>
+      <div className="header__ticker">
+          <LiveTicker/>
+        </div>
+      </Container>
+      </div>
     </header>
   )
 }

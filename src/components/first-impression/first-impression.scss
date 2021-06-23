@@ -1,15 +1,53 @@
 .first-impression {
   min-height: 70vh;
 
-  @apply bg-thfBlue relative flex flex-col font-sans justify-center mb-12 text-white overflow-x-hidden pb-48 pt-64;
+  @apply bg-thfBlue relative flex flex-col font-sans justify-center text-white overflow-x-hidden;
+
+  &__mobile {
+    @apply ;
+  
+    @screen lg {
+      @apply hidden;
+    }
+
+    &::before {
+      @apply bg-thfBlue;
+      background-blend-mode: soft-light;
+    }
+
+    &__claim {
+      @apply flex items-center text-center text-5xl font-bold leading-tight tracking-tight pb-32 pt-32;
+
+      @screen lg {
+        @apply hidden;
+      }
+    }
+    
+  }
+
+  &__grid {
+  @apply hidden;
+
+  @screen lg {
+    @apply grid grid-cols-2 gap-5 pt-24 ;
+  }
 
   &__claim {
-    @apply text-center font-light leading-relaxed;
+    @apply flex items-center text-center text-3xl font-bold leading-tight tracking-tight border-8 border-white h-full ;
 
     @screen lg {
-      @apply text-left w-3/4;
+      @apply ;
     }
   }
+
+  &__picture {
+    @apply h-full w-full m-auto border-8 border-white;
+
+    @screen lg {
+      @apply ;
+    }
+  }
+}
 
   &__icon {
     @apply w-40 my-8 mx-auto overflow-hidden;
@@ -38,13 +76,13 @@
   }
 }
 
-.--dark {
+// .--dark {
 
-  .first-impression {
+//   .first-impression {
 
-  }
+//   }
   
-  .first-impression.first-impression {
+//   .first-impression.first-impression {
 
-  }
-}
+//   }
+// };

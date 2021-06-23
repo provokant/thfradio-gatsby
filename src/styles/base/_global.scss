@@ -9,9 +9,9 @@ body {
 main {
   @apply ;
 
-  &.--dark {
-    @apply bg-black text-white overflow-x-hidden;
-  }
+  // &.--dark {
+  //   @apply bg-black text-white overflow-x-hidden;
+  // }
 }
 
 h1 {
@@ -50,7 +50,7 @@ p {
 }
 
 a {
-  @apply cursor-pointer underline;
+  @apply cursor-pointer;
 
   &:hover,
   &:focus {

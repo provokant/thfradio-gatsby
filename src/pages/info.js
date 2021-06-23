@@ -12,7 +12,7 @@ const ContactPage = () => {
 
   return (
     <Layout applyDarkMode={isNight}>
-      <Section title="info">
+      <Section title="info" className="bg-thfDarkBlue">
         <Container>
           <Headline title="Info"/>
           <Contact/>

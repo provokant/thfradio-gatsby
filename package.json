@@ -45,9 +45,11 @@
     "react-marquee-double": "^0.2.0",
     "react-player": "^2.0.1",
     "react-scroll-parallax": "^2.2.0",
+    "react-slick": "^0.28.1",
     "react-soundcloud-widget": "^2.0.4",
     "react-spring": "^8.0.27",
     "react-text-loop": "^2.3.0",
+    "slick-carousel": "^1.8.1",
     "tailwindcss": "^1.1.2"
   },
   "keywords": [

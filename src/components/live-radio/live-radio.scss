@@ -34,7 +34,7 @@
       }
 
       &_button-clear {
-        @apply text-primary-700 duration-150;
+        @apply text-white duration-150;
 
         &:hover,
         &:focus {
@@ -49,37 +49,37 @@
   }
 }
 
-.--dark {
-  .live-radio {
-    @apply text-secondary-700;
+// .--dark {
+//   .live-radio {
+//     @apply text-secondary-700;
 
-    .rhap {
+//     .rhap {
 
-      &_volume-container {
+//       &_volume-container {
 
-        &:hover,
-        &:focus {
+//         &:hover,
+//         &:focus {
           
-          .rhap {
+//           .rhap {
 
-            &_volume-bar {
-              @apply bg-secondary-200;
-            }
-          }
-        }
-      }
+//             &_volume-bar {
+//               @apply bg-secondary-200;
+//             }
+//           }
+//         }
+//       }
 
-      &_volume-bar {
-        background-color: rgba(#90adfe, .2);
-      }
+//       &_volume-bar {
+//         background-color: rgba(#90adfe, .2);
+//       }
   
-      &_volume-indicator {
-        @apply bg-black border-secondary-400;
-      }
+//       &_volume-indicator {
+//         @apply bg-black border-secondary-400;
+//       }
   
-      &_button-clear {
-        @apply text-secondary-400;
-      }
-    }
-  }  
-}
+//       &_button-clear {
+//         @apply text-secondary-400;
+//       }
+//     }
+//   }  
+// }

@@ -1,19 +1,12 @@
 .scrolling-claim {
-  @apply text-center inline-block text-5xl leading-tight tracking-tight;
+  @apply flex text-center text-3xl leading-tight tracking-tight p-5 m-auto border-8 border-white;
 
-  &__logo {
-    @apply inline-block text-5xl items-start;
-
-    @screen lg {
-      @apply mr-3;
-    }
+  @screen lg {
+    @apply p-24;
   }
 
   &__static {
-    @apply inline-block font-bold;
+    @apply  font-bold;
 
-    @screen lg {
-      @apply mr-4;
-    }
   }
 }
