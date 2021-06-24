@@ -65,9 +65,9 @@ a {
 }
 
 section {
-  @apply py-12;
+  @apply pt-12 pb-12;
 
   @screen lg {
-    @apply py-20;
+    @apply pt-32 pb-20;
   }
 }

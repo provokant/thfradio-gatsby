@@ -7,10 +7,19 @@
     @screen lg {
         @apply justify-items-start grid-cols-4 pt-5 pb-10;
       }
+
+      a {
+        @apply opacity-70;
+
+        &:hover {
+          @apply opacity-100;
+        }
+      }
+    
   }
 
 &__english {
-    @apply text-white text-center mb-2 opacity-90 text-sm font-light;
+    @apply text-white italic text-center mb-2 opacity-90 text-sm font-light;
   
     @screen lg {
       @apply text-left text-base;

@@ -14,8 +14,8 @@ const Contact = () => {
                    "Schick uns eine Nachricht für allgemeine Anfragen an:"/>
       <div className="contact__english">Send us a message for any general inquiries about:</div>
       <div className="contact__link">
-        <a href="mailto:info@thfradio.de?subject=Anfragen zum THF Radio">THF Radio</a>
-        <a href="mailto:info@thfradio.de?subject=Anfragen zum Torhaus">Torhaus</a>
+        <a href="mailto:info@thfradio.de?subject=Anfragen zum THF Radio" >THF Radio</a>
+        <a href="mailto:info@thfradio.de?subject=Anfragen zum Torhaus" >Torhaus</a>
       </div>
 
       <Paragraph text=

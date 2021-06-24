@@ -5,7 +5,7 @@
   }
 
   &__group {
-    @apply bg-white flex flex-col border border-gray-500 py-4 mb-10 font-mono;
+    @apply bg-white flex flex-col border border-thfDarkBlue py-4 mb-10 font-mono rounded-lg;
 
     @screen lg {
       @apply flex-row mb-12;
