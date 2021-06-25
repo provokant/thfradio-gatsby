@@ -1,13 +1,25 @@
 .contact {
-    @apply grid grid-cols-1 justify-items-center gap-2 pt-2 pb-5;
+  @apply text-white;
+
+&__link {
+    @apply grid grid-cols-1 justify-items-center gap-2 pt-2 pb-5 font-mono;
 
     @screen lg {
         @apply justify-items-start grid-cols-4 pt-5 pb-10;
       }
-}
 
-.english {
-    @apply text-center mb-2 opacity-90 text-sm font-light;
+      a {
+        @apply opacity-70;
+
+        &:hover {
+          @apply opacity-100;
+        }
+      }
+    
+  }
+
+&__english {
+    @apply text-white italic text-center mb-2 opacity-90 text-sm font-light;
   
     @screen lg {
       @apply text-left text-base;
@@ -77,5 +89,5 @@
       }
     }
   }
-
+}
 

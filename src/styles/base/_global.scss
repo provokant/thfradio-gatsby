@@ -7,11 +7,11 @@ body {
 }
 
 main {
-  @apply bg-white;
+  @apply ;
 
-  &.--dark {
-    @apply bg-black text-white overflow-x-hidden;
-  }
+  // &.--dark {
+  //   @apply bg-black text-white overflow-x-hidden;
+  // }
 }
 
 h1 {
@@ -50,7 +50,7 @@ p {
 }
 
 a {
-  @apply cursor-pointer underline;
+  @apply cursor-pointer;
 
   &:hover,
   &:focus {
@@ -65,9 +65,9 @@ a {
 }
 
 section {
-  @apply py-12;
+  @apply pt-12 pb-12;
 
   @screen lg {
-    @apply py-20;
+    @apply pt-32 pb-20;
   }
 }

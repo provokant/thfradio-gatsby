@@ -1,5 +1,5 @@
 .cta {
-  @apply inline-block no-underline;
+  @apply flex mx-auto no-underline;
 
   &__button {
     @apply 

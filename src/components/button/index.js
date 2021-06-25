@@ -23,4 +23,4 @@ export const ButtonLink = ({ path, title = "", children }) => {
   )
 }
 
-export default Button
+export default ButtonLink

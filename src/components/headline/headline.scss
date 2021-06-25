@@ -1,8 +1,8 @@
 .headline {
-  @apply text-center font-mono uppercase;
+  @apply text-center text-white font-mono uppercase;
 
   @screen lg {
-    @apply text-left;
+    @apply text-center;
   }
 
   &__sub {
@@ -10,6 +10,6 @@
   }
 
   &__title {
-    @apply mb-10;
+    @apply mb-10 tracking-widest font-light;
   }
 }

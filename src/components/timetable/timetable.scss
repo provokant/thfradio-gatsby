@@ -5,7 +5,7 @@
   }
 
   &__group {
-    @apply flex flex-col border border-gray-500 py-4 mb-10 font-mono;
+    @apply bg-white flex flex-col border border-thfDarkBlue py-4 mb-10 font-mono rounded-lg;
 
     @screen lg {
       @apply flex-row mb-12;
@@ -17,7 +17,7 @@
     }
 
     &__title {
-      @apply flex justify-between text-base mb-8 uppercase;
+      @apply flex justify-between text-base mb-8;
 
       &__sub {
         @apply ml-2 font-light;
@@ -91,28 +91,28 @@
   }
 }
 
-.--dark {
+// .--dark {
 
-  .timetable {
+//   .timetable {
 
-    &__group {
-      @apply border-gray-800;
-    }
+//     &__group {
+//       @apply border-gray-800;
+//     }
 
-    &__child {
+//     &__child {
 
-      &__summary {}
+//       &__summary {}
 
-      &__date {
-        @apply text-gray-500;
+//       &__date {
+//         @apply text-gray-500;
 
-        &__icon {
-        }
+//         &__icon {
+//         }
 
-        span {
-          @apply text-gray-300;
-        }
-      }
-    }
-  }
-}
+//         span {
+//           @apply text-gray-800;
+//         }
+//       }
+//     }
+//   }
+// }

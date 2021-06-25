@@ -23,7 +23,7 @@ const Archive = ({ isDarkMode = false }) => {
   )
 
   return (
-    <Section title="archive">
+    <Section title="archive" className="bg-thfDarkBlue">
       {
         archivePlays && <ReactPlayer
           url={archivePlays}

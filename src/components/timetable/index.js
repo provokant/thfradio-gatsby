@@ -13,7 +13,7 @@ export const Timetable = () => {
   const { weekdaysThisAndNextWeek } = useAllShows()
 
   return (
-    <Section title="timetable">
+    <Section title="timetable" className="bg-thfBlue">
       <Container>
         <Headline title="Programm"/>
         <TimetableWrapper>

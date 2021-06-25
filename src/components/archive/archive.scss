@@ -1,5 +1,5 @@
 .archive {
-
+  
   &__player {
     @apply fixed inset-x-0 bottom-0 z-50;
   }
@@ -144,43 +144,43 @@
   }
 }
 
-.--dark {
+// .--dark {
 
-  .archive {
-    @apply text-white;
+//   .archive {
+//     @apply text-white;
 
-    &-child {
-      @apply bg-black border-gray-800;
+//     &-child {
+//       @apply bg-black border-gray-800;
   
-      &__cover {
+//       &__cover {
 
-        &__icon {
-          @apply text-secondary-400;
-        }
-      }
+//         &__icon {
+//           @apply text-secondary-400;
+//         }
+//       }
 
-      &.--active,
-      &:hover,
-      &:focus {
-        @apply border-secondary-500;
+//       &.--active,
+//       &:hover,
+//       &:focus {
+//         @apply border-secondary-500;
 
-        .archive {
+//         .archive {
 
-          &-child {
+//           &-child {
 
-            &__content {
+//             &__content {
               
-              &__title {
-                @apply text-secondary-400;
-              }
-            }
-          }
-        }
-      }
+//               &__title {
+//                 @apply text-secondary-400;
+//               }
+//             }
+//           }
+//         }
+//       }
 
-      &:active {
-        outline-color: theme("colors.secondary.800");
-      }
-    }
-  }
-}
+//       &:active {
+//         outline-color: theme("colors.secondary.800");
+//       }
+//     }
+//   }
+// }

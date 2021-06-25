@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Navigation from "./../navigation"
+import NavigationFooter from "./../navigation/nav-footer"
 import Container from "./../container"
 import LogoDark from '../logo/logo-dark'
 
@@ -23,20 +23,21 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <div className="footer__nav">
-          <div className="footer__nav__main">
-            <Navigation/>
-          </div>
-          {staticPageLinks &&
+        {staticPageLinks &&
           <ul className="footer__nav__secondary">
             {staticPageLinks.map((link, n) => (
               <li key={n}>{link}</li>
             ))}
           </ul>
           }
+          <div className="footer__nav__main">
+            <NavigationFooter/>
+          </div>
+
         </div>
-        <div className="footer__logo">
+        {/* <div className="footer__logo">
           <LogoDark isInverted/>
-        </div>
+        </div> */}
       </Container>
       <Container>
         <div className="footer__credits">

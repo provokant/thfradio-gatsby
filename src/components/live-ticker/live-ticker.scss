@@ -3,14 +3,15 @@
   @apply 
     py-2
     font-mono 
-    text-primary-700
+    bg-white
+    text-thfDarkBlue
     whitespace-no-wrap
     overflow-hidden;
 }
 
-.--dark {
+// .--dark {
 
-  .live-ticker {
-    @apply bg-transparent text-secondary-300;
-  }
-}
+//   .live-ticker {
+//     @apply bg-transparent text-secondary-300;
+//   }
+// }

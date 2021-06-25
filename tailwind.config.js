@@ -8,6 +8,9 @@ module.exports = {
       },
     },
     colors: {
+      thfBlue: "#1200FF",
+      thfOrange: "#FF6314",
+      thfDarkBlue: "#160949",
       black: "#171517",
       white: "#FAFAFA",
       transparent: "transparent",
@@ -77,7 +80,7 @@ module.exports = {
       light: "300",
       normal: "400", 
       medium: "500", 
-      bold: "700",
+      bold: "600",
     },
     borderWidth: {
       default: "1px",
@@ -85,6 +88,8 @@ module.exports = {
       "2": "2px",
       "3": "3px",
       "4": "4px",
+      "8": "4px",
+
     },
     borderRadius: {
       none: "0",
