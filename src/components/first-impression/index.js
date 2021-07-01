@@ -7,7 +7,7 @@ import ButtonLink from "../button/index"
 import BackgroundImage from "gatsby-background-image"
 import useBackgroundImages from "./first-impression-hook-images"
 import useSingleImage from "./first-impression-hook-single-image"
-import FirstImpresssionSlider from "./slider"
+// import FirstImpresssionSlider from "./slider"
 
 export const FirstImpression = () => {
   const { imageDefault } = useBackgroundImages()

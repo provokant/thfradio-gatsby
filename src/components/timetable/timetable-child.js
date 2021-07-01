@@ -10,9 +10,9 @@ moment.updateLocale("de", localization)
 export const TimetableChild = ({ summary, start, end, uid }) => {
   const TCDate = () =>
     <div className="timetable__child__date">
-      {moment(start).format("HH:mm")}
+      {moment(start).format("hh:mm")}
       <WaveIcon className="timetable__child__date__icon"/>
-      {moment(end).format("HH:mm")}
+      {moment(end).format("hh:mm")}
     </div>
 
   const TCSummary = () =>
