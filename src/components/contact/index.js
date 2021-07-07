@@ -1,5 +1,4 @@
 import React from "react"
-import ButtonExternal from "../button/button-external"
 import Paragraph from "../paragraph"
 
 import "./contact.scss"
