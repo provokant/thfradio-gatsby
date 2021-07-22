@@ -25,7 +25,7 @@ const Contact = () => {
         our community radio and Verein)?
       </div>
       <div className="contact__link">
-        <div><a href="mailto:play@thfradio.de?subject=Show bei THF Radio">play @ thfradio</a>
+        <div><a href="mailto:play@thfradio.com?subject=Show bei THF Radio">play @ thfradio</a>
         </div>
       </div>
     </div>
