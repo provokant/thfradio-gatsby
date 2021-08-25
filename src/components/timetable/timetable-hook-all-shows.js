@@ -32,8 +32,6 @@ moment().isDST()
  ? showsAll = allIcal.showsAll.map(x=>({...x, start:moment(x.start).add(!isNull(x.rrule)?0:moment().utcOffset(),'m'), end:moment(x.end).add(!isNull(x.rrule)?0:moment().utcOffset(),'m')})) 
  : {showsAll}=allIcal
 
- console.log(showsAll.filter(x=>!isNull(x.rrule)))
-
   const allGroupedWeekdays = groupBy(showsAll, ({ start }) =>
     moment(start).startOf('day')
   )
