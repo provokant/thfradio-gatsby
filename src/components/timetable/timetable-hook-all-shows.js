@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby"
-import { groupBy, isNull } from "lodash"
+import { groupBy } from "lodash"
 import moment from "moment"
 
 moment.locale('de')
@@ -26,11 +26,13 @@ export const useAllShows = () => {
     }
   `)
 
+// keeping this in comments in case team up shifts times again
+// let showsAll;
+// moment().isDST()
+//  ? showsAll = allIcal.showsAll.map(x=>({...x, start:moment(x.start).add(!isNull(x.rrule)?0:moment().utcOffset(),'m'), end:moment(x.end).add(!isNull(x.rrule)?0:moment().utcOffset(),'m')})) 
+//  : {showsAll}=allIcal
 
-let showsAll;
-moment().isDST()
- ? showsAll = allIcal.showsAll.map(x=>({...x, start:moment(x.start).add(!isNull(x.rrule)?0:moment().utcOffset(),'m'), end:moment(x.end).add(!isNull(x.rrule)?0:moment().utcOffset(),'m')})) 
- : {showsAll}=allIcal
+let {showsAll} =  allIcal 
 
   const allGroupedWeekdays = groupBy(showsAll, ({ start }) =>
     moment(start).startOf('day')
