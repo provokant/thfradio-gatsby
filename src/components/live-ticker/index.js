@@ -7,10 +7,11 @@ import useAllShows from "../timetable/timetable-hook-all-shows"
 
 import "./live-ticker.scss"
 
-moment.updateLocale("de", localization)
+//moment.updateLocale("de", localization)
 
 export const LiveTicker = () => {
   const { nowPlaying, nextPlaying } = useAllShows()
+  console.log(nowPlaying, nextPlaying)
 
   const message = nowPlaying ? `
       NOW LIVE ON AIR-PORT:
