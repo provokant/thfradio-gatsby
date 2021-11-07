@@ -32,7 +32,6 @@ export const useAllShows = () => {
 //  ? showsAll = allIcal.showsAll.map(x=>({...x, start:moment(x.start).add(!isNull(x.rrule)?0:moment().utcOffset(),'m'), end:moment(x.end).add(!isNull(x.rrule)?0:moment().utcOffset(),'m')})) 
 //  : {showsAll}=allIcal
 
-console.log("start of day", startOfToday)
 
 let {showsAll} =  allIcal 
 
@@ -57,8 +56,6 @@ let {showsAll} =  allIcal
   const nowPlaying = allUpcoming.find(({ start, end }) =>
     moment().isBetween(start, end)
   )
-  console.log("now playing", nowPlaying)
-
   const nextPlaying = allUpcoming
     .filter(({ start }) => moment().diff(start) < 0)
     .sort((a, b) => {
