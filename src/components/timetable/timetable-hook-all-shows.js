@@ -32,6 +32,7 @@ export const useAllShows = () => {
 //  ? showsAll = allIcal.showsAll.map(x=>({...x, start:moment(x.start).add(!isNull(x.rrule)?0:moment().utcOffset(),'m'), end:moment(x.end).add(!isNull(x.rrule)?0:moment().utcOffset(),'m')})) 
 //  : {showsAll}=allIcal
 
+
 let {showsAll} =  allIcal 
 
   const allGroupedWeekdays = groupBy(showsAll, ({ start }) =>
@@ -50,8 +51,9 @@ let {showsAll} =  allIcal
     )
   )
   const weekdaysThisAndNextWeek = groupBy(allThisAndNextWeek, ({ start }) =>
-    moment(start).startOf('day')
-  )
+    moment(start).startOf('day').toISOString()
+  ) 
+
   const nowPlaying = allUpcoming.find(({ start, end }) =>
     moment().isBetween(start, end)
   )
