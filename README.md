@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>THF Radio - Landingpage v1</h1>
+  <h1>THF Radio - Landingpage v2</h1>
   <sup>GatsbyJS · iCal · Contentful · Mixcloud · YAML · Markdown</sup>
 </div>
 

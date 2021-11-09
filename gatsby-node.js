@@ -165,3 +165,44 @@ createMarkdownPages = ({ createPage, graphql, reporter }) => {
     )
   })
 }
+
+/** 
+ * Grab Show page data from Contentful and create pages
+ */
+
+
+// exports.createPages = ({ graphql, actions }) => {
+//   const { createPage } = actions
+
+//   return new Promise((resolve, reject) => {
+//     graphql(`
+//       {
+//         Show: allContentfulShow {
+//           nodes {
+//             title
+//             slug
+//           }
+//         }
+//       }
+//     `).then(({ errors, data }) => {
+//       if (errors) {
+//         reject(errors)
+//       }
+
+//       if (data && data.Show) {
+//         const component = path.resolve("./src/templates/show.template.js")
+//         data.Show.nodes.map(({ slug }) => {
+//           createPage({
+//             path: `/show/${slug}`,
+//             component,
+//             context: { slug },
+//           })
+//         })
+//       }
+
+//       resolve()
+//     })
+//   })
+// }
+
+

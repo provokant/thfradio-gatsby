@@ -15,7 +15,7 @@ export const Timetable = () => {
   return (
     <Section title="timetable" className="bg-thfBlue">
       <Container>
-        <Headline title="Programm"/>
+        <Headline title="Programme"/>
         <TimetableWrapper>
           <TimetableGrouped by={weekdaysThisAndNextWeek}/>
         </TimetableWrapper>

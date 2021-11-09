@@ -41,10 +41,11 @@ export const Footer = () => {
       </Container>
       <Container>
         <div className="footer__credits">
-          Diese Webseite wurde entwickelt von <a href="//dailysh.it" target="_blank" rel="noopener noreferrer">
-          <nobr>NEXT LEVEL SHIT</nobr>
-        </a> unter dem Einsatz von Open-Source Software. Der <a href="//github.com/nextlevelshit/nls-gatsby-thfradio">Code
-          ist frei verfügbar auf GitHub</a>.
+        This website was developed by <a href="//dailysh.it" target="_blank" rel="noopener noreferrer">
+          <nobr>NEXT LEVEL SHIT</nobr> 
+          </a> using open source software. <br></br>
+          The <a href="//github.com/nextlevelshit/nls-gatsby-thfradio">code
+          is freely available on GitHub</a>.
         </div>
       </Container>
     </footer>

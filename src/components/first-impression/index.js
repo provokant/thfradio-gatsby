@@ -26,15 +26,20 @@ export const FirstImpression = () => {
       fluid={imageDefault.childImageSharp.fluid}>
       <Container>
           <div className="first-impression__mobile__claim">
-                <p>Wir sind ein Community Radio im Torhaus am Flughafen Tempelhof</p>
-            </div>
+          <div>
+                <p>We are a community radio station at the gatehouse of Tempelhof Airport</p>
+                <p className="first-impression__mobile__claim__german">Wir sind ein Community Radio im Torhaus am Flughafen Tempelhof</p>
+                </div>            </div>
       </Container>
       </BackgroundImage>
 
       <Container>
         <div className="first-impression__grid">
             <div className="first-impression__grid__claim">
-                <p>Wir sind ein Community Radio im Torhaus am Flughafen Tempelhof</p>
+              <div>
+                <p>We are a community radio station at the gatehouse of Tempelhof Airport</p>
+                <p className="first-impression__grid__claim__german">Wir sind ein Community Radio im Torhaus am Flughafen Tempelhof</p>
+                </div>
             </div>
             <div className="first-impression__grid__picture">
             <Img fluid={gridImage.childImageSharp.fluid} alt="THF Radio, Torhaus Berlin"/>
@@ -42,12 +47,12 @@ export const FirstImpression = () => {
             <ButtonLink
                 title="Über uns"
                 path="/info">
-                    <span>Über uns</span>
+                    <span>About us</span>
               </ButtonLink>
             <ButtonLink
                 title="Aus dem Archiv"
                 path="/#archive">
-                    <span>Aus dem Archiv</span>
+                    <span>Listen to the archive</span>
                     </ButtonLink>
         </div>
       </Container>
