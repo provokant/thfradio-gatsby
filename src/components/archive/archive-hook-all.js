@@ -27,6 +27,7 @@ const useAllArchive = () => {
   `)
 
   const { archive } = allShow
+  archive.map(x=>x.date=new Date(x.date))
 
   const archiveSorted = archive.sort((a, b) => {
     return new Date(b.date) - new Date(a.date)
