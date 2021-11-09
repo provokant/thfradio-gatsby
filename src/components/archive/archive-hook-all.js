@@ -30,7 +30,7 @@ const useAllArchive = () => {
   archive.map(x=>x.date=new Date(x.date))
 
   const archiveSorted = archive.sort((a, b) => {
-    return new Date(b.date) - new Date(a.date)
+    return b.date - a.date
   })
 
   return { archive, archiveSorted }
