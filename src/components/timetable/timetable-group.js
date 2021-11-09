@@ -5,7 +5,7 @@ import localization from "moment/locale/de"
 import "./timetable.scss"
 import TimetableChildren from "./timetable-children"
 
-moment.updateLocale("de", localization)
+moment.updateLocale("en-us", localization)
 
 export const TimetableGrouped = ({ by }) => by &&
   Object.entries(by).map(([date, shows], i) => (

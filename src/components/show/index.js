@@ -41,7 +41,7 @@ const Archive = ({ isDarkMode = false }) => {
           }}/>
       }
       <Container>
-        <Headline title="Archive"/>
+        <Headline title="Archiv"/>
         <ArchiveContainer>
           <ArchiveChildren/>
         </ArchiveContainer>

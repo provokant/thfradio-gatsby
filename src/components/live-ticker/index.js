@@ -13,18 +13,17 @@ export const LiveTicker = () => {
   const { nowPlaying, nextPlaying } = useAllShows()
 
   const message = nowPlaying ? `
-      NOW LIVE ON AIR-PORT:
-      <b>${nowPlaying.summary}</b>
-      von
+      <b>NOW LIVE ON AIRPORT:</b>
+     ${nowPlaying.summary}
+      from
       ${moment(nowPlaying.start).format("HH:mm")}
-      bis
+      to
       ${moment(nowPlaying.end).format("HH:mm")}
-      Uhr
       –
     ` : `
-      NOW PLAYING THF RADIO ARCHIVE – <b>Nächste Show
-      am
-      ${moment(nextPlaying.start).format("dddd, HH:mm")} Uhr</b>
+      <b>NOW PLAYING THF RADIO ARCHIVE</b> – Next show
+      on
+      ${moment(nextPlaying.start).format("dddd, HH:mm")}
       <i>${nextPlaying.summary}</i>
       –
     `
