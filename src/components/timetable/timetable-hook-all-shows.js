@@ -51,8 +51,9 @@ let {showsAll} =  allIcal
     )
   )
   const weekdaysThisAndNextWeek = groupBy(allThisAndNextWeek, ({ start }) =>
-    moment(start).startOf('day')
-  )
+    moment(start).startOf('day').toISOString()
+  ) 
+
   const nowPlaying = allUpcoming.find(({ start, end }) =>
     moment().isBetween(start, end)
   )
