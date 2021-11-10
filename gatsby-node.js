@@ -31,11 +31,12 @@ exports.sourceNodes = async ({
   const response1 = await result1.json()
   const response2 = await result2.json()
 
-  const data=response0.data.concat(response1.data)
-  //const data1 = await result1.json().data
-  //const data2 = await result2.json().data
+  const data0 = response0.data
+  const data1 = response1.data
+  const data2 = response2.data
 
-  //const data = data0.concat(data1).concat(data2)
+  const data=data0.concat(data1).concat(data2)
+
 
   data.forEach((node, i) => {
     const nodeId = createNodeId(`${node.key} [${i}] >>> MIXCLOUD`)

@@ -26,7 +26,8 @@ const useAllArchive = () => {
     } 
   `)
 
-  const { archive } = allShow
+  let { archive } = allShow
+  archive = archive.splice(1,100)
   archive.map(x=>x.date=new Date(x.date))
 
   const archiveSorted = archive.sort((a, b) => {
