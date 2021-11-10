@@ -15,28 +15,14 @@ const { createRemoteFileNode } = require("gatsby-source-filesystem")
 require("dotenv").config()
 
 const { MIXCLOUD_API } = process.env
-async function res(i){return await fetch(MIXCLOUD_API+`?offset=${i*100}&limit=9999`)}
-
 
 exports.sourceNodes = async ({ 
   actions: { createNode }, 
   createContentDigest,
   createNodeId,
 }) => {
-  const result0 = await res(0)
-  const result1 = await res(1)
-  const result2 = await res(2)
-
-  const response0 = await result0.json()
-  const response1 = await result1.json()
-  const response2 = await result2.json()
-
-  const data0 = response0.data
-  const data1 = response1.data
-  const data2 = response2.data
-
-  const data=data0.concat(data1).concat(data2)
-
+  const result = await fetch(MIXCLOUD_API)
+  const { data } = await result.json()
 
   data.forEach((node, i) => {
     const nodeId = createNodeId(`${node.key} [${i}] >>> MIXCLOUD`)
