@@ -26,7 +26,7 @@ export const TimetableGroupTitlePrefix = ({ date }) => {
 
   return (
     <>
-      {diffDays > 0 && "Letzten "}
+      {diffDays > 0 && "Last "}
       {(diffWeeks === 0 && diffDays <= 0) && " "}
       {diffWeeks === -1 && " "}
       {diffWeeks === -2 && " "}
@@ -41,7 +41,7 @@ export const TimetableGroupTitleWeekday = ({ date }) => (
 
 export const TimetableGroupTitleSuffix = ({ date }) => (
   <>
-    {moment().diff(date, "week") < -2 && " in der Zukunft"}
+    {moment().diff(date, "week") < -2 && "in the future"}
   </>
 )
 
