@@ -11,8 +11,6 @@ moment.updateLocale("de", localization)
 
 export const LiveTicker = () => {
   const { nowPlaying, nextPlaying } = useAllShows()
-  console.log("now", nowPlaying)
-  console.log("next", nextPlaying)
 
   const message = nowPlaying ? `
       <b>NOW LIVE ON AIRPORT:</b>
