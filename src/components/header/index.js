@@ -4,6 +4,8 @@ import Navigation from "../navigation"
 import LiveRadio from "../live-radio"
 import Container from "../container"
 import LiveTicker from "../live-ticker"
+import NavMobile from "../navigation/nav-mobile"
+
 import { GlobalStateContext } from "../../context/global-context-provider"
 
 import "./header.scss"
@@ -16,21 +18,26 @@ const Header = () => {
     <header className="header">
       <Container>
         <div className="header__logo">
-          <LogoImage/>
+          <LogoImage />
         </div>
         <nav role="navigation" className="header__nav">
-          <Navigation/>
+          <Navigation />
         </nav>
         <div className="header__live">
-          {isArchivePlayerPlaying ? "ARCHIVE PLAYING…" : <LiveRadio/>}
+          {isArchivePlayerPlaying ? "ARCHIVE PLAYING…" : <LiveRadio />}
         </div>
+      </Container>
+      <Container>
+        <nav role="navigation" className="header__navMobile">
+          <NavMobile />
+        </nav>
       </Container>
       <div className="bg-white">
         <Container>
-      <div className="header__ticker">
-          <LiveTicker/>
-        </div>
-      </Container>
+          <div className="header__ticker">
+            <LiveTicker />
+          </div>
+        </Container>
       </div>
     </header>
   )
