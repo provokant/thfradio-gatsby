@@ -21,7 +21,7 @@
       flex 
       flex-row 
       items-stretch 
-      overflow-hidden 
+      overflow-hidden
 
       rounded-sm
       font-mono
@@ -71,9 +71,7 @@
     &__content {
       @apply 
         flex 
-        flex-col 
-        flex-grow 
-        h-full 
+        flex-col        
         items-stretch 
         justify-around 
         my-6 

@@ -21,6 +21,14 @@
     }
   }
 
+  &__navMobile {
+    @apply w-full pb-2 ;
+
+    @screen lg {
+      @apply hidden text-base;
+    }
+  }
+
   &__ticker {
     @apply relative flex-initial overflow-hidden;
 
