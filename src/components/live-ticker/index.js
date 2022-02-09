@@ -13,7 +13,7 @@ export const LiveTicker = () => {
   const { nowPlaying, nextPlaying } = useAllShows()
   console.log('nowBoolean', !!nowPlaying)
   console.log('now', nowPlaying)
-  console.log('nextBoolean', !!nowPlaying)
+  console.log('nextBoolean', !!nextPlaying)
   console.log('next', nextPlaying)
 
   const message = nowPlaying ? `
