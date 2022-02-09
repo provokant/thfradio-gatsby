@@ -32,7 +32,6 @@ const useAllArchive = () => {
   const archiveSorted = archive.sort((a, b) => {
     return b.date - a.date
   })
-
   return { archive, archiveSorted }
 }
 
