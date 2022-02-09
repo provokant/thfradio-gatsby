@@ -15,6 +15,7 @@ export const LiveTicker = () => {
   console.log('now', nowPlaying)
   console.log('nextBoolean', !!nextPlaying)
   console.log('next', nextPlaying)
+  console.log('nowTime', new Date())
 
   const message = nowPlaying ? `
       <b>NOW LIVE ON AIRPORT:</b>
