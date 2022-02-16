@@ -11,10 +11,6 @@ moment.updateLocale("de", localization)
 
 export const LiveTicker = () => {
   const { nowPlaying, nextPlaying } = useAllShows()
-  console.log('now', nowPlaying)
-  console.log('nowBoolean', !!nowPlaying)
-  console.log('next',nextPlaying)
-  console.log('nextBoolean', !!nextPlaying)
 
   const message = nowPlaying ? `
       <b>NOW LIVE ON AIRPORT:</b>
@@ -31,7 +27,16 @@ export const LiveTicker = () => {
       <i>${nextPlaying.summary}</i>
       –
     `
+    
+  const getMessage = () => {
+      return {__html: message};
+    }
 
+    React.useEffect(() => {
+      console.log('useEffect')
+      getMessage();
+    }, [message,getMessage()]);
+  
   return (
     <div className="live-ticker">
       <Marquee
@@ -42,7 +47,7 @@ export const LiveTicker = () => {
         direction={"left"}
         delay={1000}
       >
-        <span dangerouslySetInnerHTML={{ __html: message }}/>
+        <span dangerouslySetInnerHTML={getMessage()}/>
       </Marquee>
     </div>
   )
