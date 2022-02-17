@@ -13,15 +13,16 @@ export const LiveTicker = () => {
   const { nowPlaying, nextPlaying } = useAllShows()
 
   const message = nowPlaying ? `
-      <b>NOW LIVE ON AIRPORT:</b>
-     ${nowPlaying.summary}
-      from
-      ${moment(nowPlaying.start).format("HH:mm")}
-      to
-      ${moment(nowPlaying.end).format("HH:mm")}
-      –
+      LIVE FROM AIRPORT BERLIN <b><i>NOW:&nbsp;&nbsp;&nbsp;&nbsp;</i></b>
+      <i>${nowPlaying.summary}
+      ${moment(nowPlaying.start).format("HH:mm")}-${moment(nowPlaying.end).format("HH:mm")}
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <b>Next show:</b>
+      ${nextPlaying.summary}
+      ${moment(nextPlaying.start).format("HH:mm")}-${moment(nextPlaying.end).format("HH:mm")}
+      </i>
     ` : `
-      <b>NOW PLAYING THF RADIO ARCHIVE</b> – Next show
+      <b>NOW PLAYING THF RADIO ARCHIVE</b> – <b>Next show</b>
       on
       ${moment(nextPlaying.start).format("dddd, HH:mm")}
       <i>${nextPlaying.summary}</i>
@@ -32,13 +33,13 @@ export const LiveTicker = () => {
     <div className="live-ticker">
       <Marquee
         step={1}
-        space={5}
+        space={100}
         interval={20}
         autoStart={true}
         direction={"left"}
         delay={1000}
       >
-        <span dangerouslySetInnerHTML={{ __html: message }}/>
+        <span dangerouslySetInnerHTML={{ __html: message }} />
       </Marquee>
     </div>
   )
