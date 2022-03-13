@@ -10,6 +10,7 @@ import "./archive.scss"
 const ShowsChild = ({
   date,
   name,
+  tags,
   pictures,
   url
 }) => {
@@ -17,6 +18,7 @@ const ShowsChild = ({
 
   const { archivePlays } = useContext(GlobalStateContext)
   const isPlaying = archivePlays === url
+  const displayedTags = x => x.slice(0,2).join(' - ');
 
   const togglePlayer = () => {
     dispatch({ type: "TOGGLE_ARCHIVE_PLAYER", payload: url })
@@ -35,6 +37,7 @@ const ShowsChild = ({
         </div>
         <div className="archive-child__content">
           <div className="archive-child__content__title">{name}</div>
+          <div className="archive-child__content__tags">{displayedTags(tags)}</div>
           <div className="archive-child__content__date">
             {moment(date).format("DD.MM.YYYY")}
           </div>
