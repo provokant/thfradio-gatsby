@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import moment from "moment"
 import localization from "moment/locale/de"
 import Marquee from "react-marquee-double"
