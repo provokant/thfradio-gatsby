@@ -15,15 +15,9 @@ export const LiveTicker = () => {
   const [currentShow] = useState(nowPlaying)
   const [nextShow] = useState(nextPlaying)
 
-
-  console.log("now", currentShow)
-  console.log("next", nextShow)
-
-  console.log(currentShow? true: false)
-
-  const message = nowPlaying ? `
+  const message = currentShow ? `
       LIVE FROM AIRPORT BERLIN <b><i>NOW:&nbsp;&nbsp;&nbsp;&nbsp;</i></b>
-      <i>${nowPlaying.summary}
+      <i>${currentShow.summary}
       ${moment(currentShow.start).format("HH:mm")}-${moment(currentShow.end).format("HH:mm")}
       &nbsp;&nbsp;&nbsp;&nbsp;
       <b>Next show:</b>
