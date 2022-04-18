@@ -12,20 +12,29 @@ moment.updateLocale("de", localization)
 export const LiveTicker = () => {
   const { nowPlaying, nextPlaying } = useAllShows()
 
+  const [currentShow] = useState(nowPlaying)
+  const [nextShow] = useState(nextPlaying)
+
+
+  console.log("now", currentShow)
+  console.log("next", nextShow)
+
+  console.log(currentShow? true: false)
+
   const message = nowPlaying ? `
       LIVE FROM AIRPORT BERLIN <b><i>NOW:&nbsp;&nbsp;&nbsp;&nbsp;</i></b>
       <i>${nowPlaying.summary}
-      ${moment(nowPlaying.start).format("HH:mm")}-${moment(nowPlaying.end).format("HH:mm")}
+      ${moment(currentShow.start).format("HH:mm")}-${moment(currentShow.end).format("HH:mm")}
       &nbsp;&nbsp;&nbsp;&nbsp;
       <b>Next show:</b>
-      ${nextPlaying.summary}
-      ${moment(nextPlaying.start).format("HH:mm")}-${moment(nextPlaying.end).format("HH:mm")}
+      ${nextShow.summary}
+      ${moment(nextShow.start).format("HH:mm")}-${moment(nextShow.end).format("HH:mm")}
       </i>
     ` : `
       <b>NOW PLAYING THF RADIO ARCHIVE</b> – <b>Next show</b>
       on
-      ${moment(nextPlaying.start).format("dddd, HH:mm")}
-      <i>${nextPlaying.summary}</i>
+      ${moment(nextShow.start).format("dddd, HH:mm")}
+      <i>${nextShow.summary}</i>
       –
     `
 
