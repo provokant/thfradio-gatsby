@@ -13,8 +13,16 @@
     }
   }
 
+  &__item:nth-child(1) {
+    @apply text-center;
+    /* @apply border-t border-l border-r; */
+  
+  }
+
   &__item {
     @apply text-center;
+    /* @apply border-t border-r; */
+  
   }
 }
 

@@ -1,12 +1,12 @@
 .header {
-  @apply fixed bg-thfBlue top-0 inset-x-0 z-10 border-b border-gray-400 font-mono text-white;
+  @apply fixed bg-thfBlue top-0 pt-2 inset-x-0 z-10 border-b border-gray-400 font-mono text-white;
 
   .container {
     @apply flex flex-initial items-center justify-between;
   }
 
   &__logo {
-    @apply flex flex-none items-center flex-initial mr-2 text-3xl;
+    @apply flex items-center flex-initial mr-2 text-3xl;
 
     @screen lg {
       @apply mr-12;
@@ -37,7 +37,7 @@
       @apply absolute inset-y-0 w-12 h-full z-20;
     }
 
-    &:before {
+    /* &:before {
       content: "";
       background-image: linear-gradient(
         90deg, 
@@ -58,11 +58,18 @@
       );
   
       @apply right-0;
-    }
+    } */
   }
 
   &__live {
-    @apply flex-none flex items-center;
+    @apply flex-none flex items-center px-5;
+    /* @apply border-r border-l border-t; */
+  }
+
+
+  &__language {
+    @apply flex-none flex items-center px-5;
+    /* @apply border-r border-t; */
   }
 
   a {
