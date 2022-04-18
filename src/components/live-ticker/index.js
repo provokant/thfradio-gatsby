@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import moment from "moment"
 import localization from "moment/locale/de"
 import Marquee from "react-marquee-double"
@@ -12,30 +12,31 @@ moment.updateLocale("de", localization)
 export const LiveTicker = () => {
   const { nowPlaying, nextPlaying } = useAllShows()
 
+  const [currentShow] = useState(nowPlaying)
+  const [nextShow] = useState(nextPlaying)
+
+
+  console.log("now", currentShow)
+  console.log("next", nextShow)
+
+  console.log(currentShow? true: false)
+
   const message = nowPlaying ? `
       <b>NOW LIVE ON AIRPORT:</b>
-     ${nowPlaying.summary}
+     ${currentShow.summary}
       from
-      ${moment(nowPlaying.start).format("HH:mm")}
+      ${moment(currentShow.start).format("HH:mm")}
       to
-      ${moment(nowPlaying.end).format("HH:mm")}
+      ${moment(currentShow.end).format("HH:mm")}
       –
     ` : `
       <b>NOW PLAYING THF RADIO ARCHIVE</b> – Next show
       on
-      ${moment(nextPlaying.start).format("dddd, HH:mm")}
-      <i>${nextPlaying.summary}</i>
+      ${moment(nextShow.start).format("dddd, HH:mm")}
+      <i>${nextShow.summary}</i>
       –
     `
-    
-  const getMessage = () => {
-      return {__html: message};
-    }
 
-    React.useEffect(() => {
-      console.log('useEffect')
-      getMessage();
-    }, [message,getMessage()]);
   
   return (
     <div className="live-ticker">
@@ -47,7 +48,7 @@ export const LiveTicker = () => {
         direction={"left"}
         delay={1000}
       >
-        <span dangerouslySetInnerHTML={getMessage()}/>
+        <span dangerouslySetInnerHTML={{ __html: message }}/>
       </Marquee>
     </div>
   )
