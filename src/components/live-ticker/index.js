@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 import moment from "moment"
 import localization from "moment/locale/de"
 import Marquee from "react-marquee-double"
@@ -12,26 +12,28 @@ moment.updateLocale("de", localization)
 export const LiveTicker = () => {
   const { nowPlaying, nextPlaying } = useAllShows()
 
-  const [currentShow] = useState(nowPlaying)
-  const [nextShow] = useState(nextPlaying)
-
-  const message = currentShow ? `
+  const message = (now, next) => now ? `
       LIVE FROM AIRPORT BERLIN <b><i>NOW:&nbsp;&nbsp;&nbsp;&nbsp;</i></b>
-      <i>${currentShow.summary}
-      ${moment(currentShow.start).format("HH:mm")}-${moment(currentShow.end).format("HH:mm")}
+      <i>${now.summary}
+      ${moment(now.start).format("HH:mm")}-${moment(now.end).format("HH:mm")}
       &nbsp;&nbsp;&nbsp;&nbsp;
       <b>Next show:</b>
-      ${nextShow.summary}
-      ${moment(nextShow.start).format("HH:mm")}-${moment(nextShow.end).format("HH:mm")}
+      ${next.summary}
+      ${moment(next.start).format("HH:mm")}-${moment(next.end).format("HH:mm")}
       </i>
     ` : `
       <b>NOW PLAYING THF RADIO ARCHIVE</b> – <b>Next show</b>
       on
-      ${moment(nextShow.start).format("dddd, HH:mm")}
-      <i>${nextShow.summary}</i>
+      ${moment(next.start).format("dddd, HH:mm")}
+      <i>${next.summary}</i>
       –
     `
+  const [ticker, setTicker] = useState(message(nowPlaying,nextPlaying))
+  console.log(ticker)
+    
+  useEffect(()=>{setTicker(message(nowPlaying,nextPlaying))}, [nowPlaying,nextPlaying])
 
+  console.log(ticker)
   return (
     <div className="live-ticker">
       <Marquee
@@ -42,7 +44,7 @@ export const LiveTicker = () => {
         direction={"left"}
         delay={1000}
       >
-        <span dangerouslySetInnerHTML={{ __html: message }} />
+        <span dangerouslySetInnerHTML={{ __html: ticker }} />
       </Marquee>
     </div>
   )
