@@ -28,26 +28,29 @@ export const LiveTicker = () => {
       <i>${next.summary}</i>
       –
     `
-  const [ticker, setTicker] = useState(message(nowPlaying,nextPlaying))
-  console.log(ticker)
-    
-  useEffect(()=>{setTicker(message(nowPlaying,nextPlaying))}, [nowPlaying,nextPlaying])
+    const ticker = message => (
+      <div className="live-ticker">
+        <Marquee
+          step={1}
+          space={100}
+          interval={20}
+          autoStart={true}
+          direction={"left"}
+          delay={1000}
+        >
+          <span dangerouslySetInnerHTML={{ __html: message }} />
+        </Marquee>
+      </div>
+    )
 
-  console.log(ticker)
-  return (
-    <div className="live-ticker">
-      <Marquee
-        step={1}
-        space={100}
-        interval={20}
-        autoStart={true}
-        direction={"left"}
-        delay={1000}
-      >
-        <span dangerouslySetInnerHTML={{ __html: ticker }} />
-      </Marquee>
-    </div>
-  )
+
+  const [tickerDiv, setTickerDiv] = useState(ticker(message(nowPlaying,nextPlaying)))
+    
+  useEffect(()=>{setTickerDiv(ticker(message(nowPlaying,nextPlaying)))}, [nowPlaying,nextPlaying])
+  
+  console.log(tickerDiv)
+
+  return tickerDiv
 }
 
 export default LiveTicker
