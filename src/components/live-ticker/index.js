@@ -29,8 +29,6 @@ export const LiveTicker = () => {
       –
     `
 
-    console.log(message)
-
   return (
     <div className="live-ticker">
       <Marquee
