@@ -1,21 +1,21 @@
-import React, { useContext } from "react"
-import LogoImage from "../logo/logo-image"
-import Navigation from "../navigation"
-import LiveRadio from "../live-radio"
-import Container from "../container"
-import LiveTicker from "../live-ticker"
-import NavMobile from "../navigation/nav-mobile"
+import React, { useContext } from 'react';
+import LogoImage from '../logo/logo-image';
+import Navigation from '../navigation';
+import LiveRadio from '../live-radio';
+import Container from '../container';
+import LiveTicker from '../live-ticker';
+import NavMobile from '../navigation/nav-mobile';
 
-import { GlobalStateContext } from "../../context/global-context-provider"
+import { GlobalStateContext } from '../../context/global-context-provider';
 
-import "./header.scss"
+import './header.scss';
 
 const Header = () => {
-  const state = useContext(GlobalStateContext)
-  const { isArchivePlayerPlaying } = state
+  const state = useContext(GlobalStateContext);
+  const { isArchivePlayerPlaying } = state;
 
   return (
-    <header className="header">
+    <header className="header" id="top" title="top">
       <Container>
         <div className="header__logo">
           <LogoImage />
@@ -24,7 +24,7 @@ const Header = () => {
           <Navigation />
         </nav>
         <div className="header__live">
-          {isArchivePlayerPlaying ? "ARCHIVE PLAYING…" : <LiveRadio />}
+          {isArchivePlayerPlaying ? 'ARCHIVE PLAYING…' : <LiveRadio />}
         </div>
       </Container>
       <Container>
@@ -40,7 +40,7 @@ const Header = () => {
         </Container>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

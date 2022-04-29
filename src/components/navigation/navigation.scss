@@ -16,13 +16,11 @@
   &__item:nth-child(1) {
     @apply text-center;
     /* @apply border-t border-l border-r; */
-  
   }
 
   &__item {
     @apply text-center;
     /* @apply border-t border-r; */
-  
   }
 }
 
@@ -46,9 +44,8 @@
   }
 }
 
-
 .navFooter {
-  @apply flex flex-col text-left ;
+  @apply flex flex-col text-left;
 
   @screen lg {
     @apply -mx-8 px-4;
@@ -59,8 +56,6 @@
       &__link {
         @apply flex py-6 h-full;
       }
-
-      
     }
   }
 

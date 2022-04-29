@@ -1,11 +1,15 @@
 .first-impression {
   min-height: 70vh;
 
-  @apply bg-thfBlue relative flex flex-col font-sans justify-center text-white overflow-x-hidden;
+  @apply bg-thfBlue relative flex flex-col font-sans justify-center text-white overflow-x-hidden pb-0;
+
+  @screen lg {
+    @apply pb-12;
+  }
 
   &__mobile {
-    @apply ;
-  
+    @apply;
+
     @screen lg {
       @apply hidden;
     }
@@ -16,15 +20,15 @@
     }
 
     &__claim {
-      @apply flex items-center text-center text-5xl font-bold leading-tight tracking-tight pb-32 pt-32;
+      @apply flex items-center text-center text-4xl font-bold leading-tight tracking-tight pb-32 pt-32;
 
       @screen lg {
         @apply hidden;
       }
 
       &__german {
-        @apply flex items-center text-center text-xl font-medium italic leading-tight tracking-tight h-full mt-6 ;
-    
+        @apply flex items-center text-center text-xl font-medium italic leading-tight tracking-tight h-full mt-6;
+
         @screen lg {
           @apply hidden;
         }
@@ -33,36 +37,36 @@
   }
 
   &__grid {
-  @apply hidden;
-
-  @screen lg {
-    @apply grid grid-cols-2 gap-5 pt-24 ;
-  }
-
-  &__claim {
-    @apply flex items-center px-6 text-center text-3xl font-bold leading-tight tracking-tight border-8 border-white h-full ;
+    @apply hidden;
 
     @screen lg {
-      @apply ;
+      @apply grid grid-cols-2 gap-5 pt-24;
     }
 
-    &__german {
-      @apply flex items-center text-center text-xl font-medium italic leading-tight tracking-tight h-full mt-6 ;
-  
+    &__claim {
+      @apply flex items-center px-6 text-center text-3xl font-bold leading-tight tracking-tight border-8 border-white h-full;
+
       @screen lg {
-        @apply ;
+        @apply;
+      }
+
+      &__german {
+        @apply flex items-center text-center text-xl font-medium italic leading-tight tracking-tight h-full mt-6;
+
+        @screen lg {
+          @apply;
+        }
+      }
+    }
+
+    &__picture {
+      @apply h-full w-full m-auto border-8 border-white;
+
+      @screen lg {
+        @apply;
       }
     }
   }
-
-  &__picture {
-    @apply h-full w-full m-auto border-8 border-white;
-
-    @screen lg {
-      @apply ;
-    }
-  }
-}
 
   &__icon {
     @apply w-40 my-8 mx-auto overflow-hidden;
@@ -76,17 +80,17 @@
     @apply absolute bottom-0 inset-x-0 mx-auto text-white;
 
     @screen lg {
-      max-height: theme("screens.lg");
+      max-height: theme('screens.lg');
     }
 
     @screen xl {
-      max-height: theme("screens.xl");
+      max-height: theme('screens.xl');
     }
   }
 
   &::before {
     @apply bg-primary-900;
-    
+
     background-blend-mode: soft-light;
   }
 }
@@ -96,7 +100,7 @@
 //   .first-impression {
 
 //   }
-  
+
 //   .first-impression.first-impression {
 
 //   }

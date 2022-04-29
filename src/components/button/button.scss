@@ -2,8 +2,7 @@
   @apply flex mx-auto no-underline;
 
   &__button {
-    @apply 
-      px-8
+    @apply px-8
       py-3 
 
       rounded-sm
@@ -12,8 +11,7 @@
       font-medium
       font-mono
       border
-      border-secondary-300
-      border-dashed
+      border-thfDarkBlue
       duration-150;
 
     &:hover {

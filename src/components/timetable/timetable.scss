@@ -1,5 +1,4 @@
 .timetable {
-  
   &__wrapper {
     @apply mt-10;
   }
@@ -30,7 +29,7 @@
 
     &__children {
       @apply -mb-4 mt-4;
-  
+
       @screen lg {
         @apply mt-0 w-2/3;
       }
@@ -41,7 +40,7 @@
     }
 
     &.--passed {
-      @apply opacity-30;
+      @apply hidden;
     }
   }
 
@@ -87,7 +86,6 @@
         @apply ml-8 text-gray-800 font-light;
       }
     }
-
   }
 }
 

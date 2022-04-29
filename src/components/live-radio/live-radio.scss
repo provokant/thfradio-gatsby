@@ -1,5 +1,4 @@
 .live-radio {
-
   &.rhap_container {
     min-width: 30px;
 
@@ -10,7 +9,6 @@
     @apply bg-transparent shadow-none py-4 px-0 text-primary-700;
 
     .rhap {
-
       &_additional-controls,
       &_progress-section,
       &_rewind-button,
@@ -59,7 +57,7 @@
 
 //         &:hover,
 //         &:focus {
-          
+
 //           .rhap {
 
 //             &_volume-bar {
@@ -72,14 +70,14 @@
 //       &_volume-bar {
 //         background-color: rgba(#90adfe, .2);
 //       }
-  
+
 //       &_volume-indicator {
 //         @apply bg-black border-secondary-400;
 //       }
-  
+
 //       &_button-clear {
 //         @apply text-secondary-400;
 //       }
 //     }
-//   }  
+//   }
 // }

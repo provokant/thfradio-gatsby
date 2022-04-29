@@ -5,12 +5,10 @@ import './first-impression.scss';
 import Img from 'gatsby-image';
 import ButtonLink from '../button/index';
 import BackgroundImage from 'gatsby-background-image';
-import useBackgroundImages from './first-impression-hook-images';
-import useSingleImage from './first-impression-hook-single-image';
+import useImages from './landing-image-gallery-hook';
 // import FirstImpresssionSlider from "./slider"
 
-export const FirstImpression = () => {
-  const { imageDefault } = useBackgroundImages();
+export const LandingImageGallery = () => {
   const { gridImage } = useSingleImage();
 
   return (
@@ -32,18 +30,9 @@ export const FirstImpression = () => {
                 We are a community radio station at the gatehouse of Tempelhof
                 Airport
               </p>
-              <br />
-              <p>
-                We are part of{' '}
-                <a
-                  href="https://www.mixcloud.com/THFRadio/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="opacity-70 hover:opacity-100"
-                >
-                  Torhaus Berlin
-                </a>
-              </p>
+              {/* <p className="first-impression__mobile__claim__german">
+                Wir sind ein Community Radio im Torhaus am Flughafen Tempelhof
+              </p> */}
             </div>
           </div>
         </Container>
@@ -56,18 +45,6 @@ export const FirstImpression = () => {
               <p>
                 We are a community radio station at the gatehouse of Tempelhof
                 Airport
-              </p>
-              <br />
-              <p>
-                We are part of{' '}
-                <a
-                  href="https://www.mixcloud.com/THFRadio/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="opacity-70 hover:opacity-100"
-                >
-                  Torhaus Berlin
-                </a>
               </p>
               {/* <p className="first-impression__grid__claim__german">
                 Wir sind ein Community Radio im Torhaus am Flughafen Tempelhof
@@ -92,4 +69,4 @@ export const FirstImpression = () => {
   );
 };
 
-export default FirstImpression;
+export default LandingImageGallery;

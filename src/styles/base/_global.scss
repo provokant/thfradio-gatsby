@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   @apply font-sans text-black bg-transparent m-0 p-0;
 }
 
@@ -7,7 +8,7 @@ body {
 }
 
 main {
-  @apply ;
+  @apply;
 
   // &.--dark {
   //   @apply bg-black text-white overflow-x-hidden;
@@ -44,7 +45,7 @@ h4 {
 // p {
 //   hyphens: auto;
 //   hyphenate-limit-chars: 6 3 3;
-//   hyphenate-limit-lines: 2;   
+//   hyphenate-limit-lines: 2;
 //   hyphenate-limit-last: always;
 //   hyphenate-limit-zone: 8%;
 // }
@@ -59,7 +60,7 @@ a {
   &:active {
   }
 
-  &[href^=tel] {
+  &[href^='tel'] {
     @apply whitespace-no-wrap;
   }
 }

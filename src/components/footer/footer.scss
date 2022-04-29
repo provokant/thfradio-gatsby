@@ -1,26 +1,24 @@
 .footer {
-  @apply 
-    pt-20
-    pb-10
+  @apply pt-10
+    pb-5
 
     bg-thfBlue
     text-white;
 
   @screen lg {
-    @apply pt-40 pb-10;
+    @apply pt-20 pb-10;
   }
 
-  .container {
-    @apply flex flex-col justify-between;
+  // .container {
+  //   @apply flex flex-col justify-between;
 
-    @screen lg {
-      @apply flex-col-reverse;
-    }
-  }
+  //   @screen lg {
+  //     @apply flex-col-reverse;
+  //   }
+  // }
 
   &__logo {
-    @apply 
-      flex 
+    @apply flex 
       justify-center 
       pt-10 
       
@@ -37,58 +35,50 @@
     @apply flex flex-col text-sm mb-6;
 
     @screen lg {
-      @apply flex-row-reverse justify-between text-base mb-16;
+      @apply flex flex-row justify-between text-base mb-16;
     }
 
     &__main {
-      
-        @apply flex flex-col;
-
+      @apply;
 
       a {
         @apply text-left py-3 block opacity-70 duration-200;
-  
+
         &:hover,
-        &:focus { 
+        &:focus {
           @apply opacity-100;
         }
       }
     }
 
     &__secondary {
+      @apply;
 
-    
-        @apply flex flex-col;
-    
-        a {
-          @apply text-right py-3 block opacity-70 duration-200;
-    
-          &:hover,
-          &:focus { 
-            @apply opacity-100;
-          }
+      a {
+        @apply text-right py-3 block opacity-70 duration-200;
+
+        &:hover,
+        &:focus {
+          @apply opacity-100;
         }
-      
+      }
     }
-
-
   }
 
   &__credits {
-    @apply w-2/3 opacity-100 font-mono mt-10 mb-10 ml-auto mr-auto text-center;
+    @apply hidden w-2/3 opacity-100 font-mono mt-0 mb-10 ml-auto mr-auto text-center text-sm;
 
     @screen lg {
-      @apply w-2/3 my-5 ml-auto mr-0 text-right;
+      @apply block w-2/3 my-5 ml-auto mr-0 text-right;
     }
     a {
       @apply opacity-70;
 
       &:hover,
-      &:focus { 
+      &:focus {
         @apply opacity-100;
       }
     }
-
   }
 }
 
