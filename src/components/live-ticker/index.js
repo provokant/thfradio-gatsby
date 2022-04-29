@@ -17,12 +17,12 @@ export const LiveTicker = () => {
       <i>${nowPlaying.summary}
       ${moment(nowPlaying.start).format("HH:mm")}-${moment(nowPlaying.end).format("HH:mm")}
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <b>Next show:</b>
+      <b>next show:</b>
       ${nextPlaying.summary}
       ${moment(nextPlaying.start).format("HH:mm")}-${moment(nextPlaying.end).format("HH:mm")}
       </i>
     ` : `
-      <b>NOW PLAYING THF RADIO ARCHIVE</b> – <b>Next show</b>
+      <b>NOW PLAYING THF RADIO ARCHIVE</b> – <b>next show</b>
       on
       ${moment(nextPlaying.start).format("dddd, HH:mm")}
       <i>${nextPlaying.summary}</i>
