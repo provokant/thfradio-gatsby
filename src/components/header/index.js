@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
-import LogoImage from '../logo/logo-image';
-import Navigation from '../navigation';
-import LiveRadio from '../live-radio';
-import Container from '../container';
-import LiveTicker from '../live-ticker';
-import NavMobile from '../navigation/nav-mobile';
+import React, { useContext } from "react"
+import LogoImage from "../logo/logo-image"
+import Navigation from "../navigation"
+import LiveRadio from "../live-radio"
+import Container from "../container"
+// import LiveTicker from "../live-ticker"
+import NavMobile from "../navigation/nav-mobile"
 
 import { GlobalStateContext } from '../../context/global-context-provider';
 
@@ -32,15 +32,17 @@ const Header = () => {
           <NavMobile />
         </nav>
       </Container>
-      <div className="bg-white">
-        <Container>
-          <div className="header__ticker">
-            <LiveTicker />
-          </div>
-        </Container>
-      </div>
     </header>
   );
 };
 
-export default Header;
+export default Header
+
+
+//keep here for live ticker later
+//        <Container>
+//<div className="header__ticker">
+//<LiveTicker />
+//</div>
+//</Container>
+//</div>
