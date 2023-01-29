@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
-import moment from "moment"
+//import moment from "moment"
+import dayjs from "dayjs"
 import Img from "gatsby-image"
 import useLogoImages from "./logo-hook-images"
 
@@ -8,7 +9,7 @@ const LogoImage = () => {
   const { logoDefault } = useLogoImages()
   const { logoDark } = useLogoImages()
 
-  const currentHour = parseFloat(moment().format("HH"))
+  const currentHour = parseFloat(dayjs().format("HH"))
   const isNight = currentHour > 18 || currentHour < 7
 
   return (

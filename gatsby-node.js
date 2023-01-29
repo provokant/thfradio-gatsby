@@ -8,7 +8,8 @@
 
 const path = require("path")
 const fetch = require("node-fetch")
-const moment = require("moment")
+//const moment = require("moment")
+const dayjs = require('dayjs')
 const { kebabCase } = require("lodash")
 const { createRemoteFileNode } = require("gatsby-source-filesystem")
 
@@ -32,7 +33,7 @@ exports.sourceNodes = async ({
     const name = showNameSplitted[0].trim()
 
     const date = showNameSplitted.length > 1
-      ? moment(showNameSplitted[1].trim(), "DD.MM.YY").format()
+      ? dayjs(showNameSplitted[1].trim(), "DD.MM.YY").format()
       : null
 
     // create show nodes

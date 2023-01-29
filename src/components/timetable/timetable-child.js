@@ -1,18 +1,24 @@
 import React from "react"
-import moment from "moment"
-import localization from "moment/locale/de"
+//import moment from "moment"
+import dayjs from "dayjs"
+//import localization from "moment/locale/de"
 import WaveIcon from "../../images/wave.svg"
-
+import 'dayjs/locale/de'
 import "./timetable.scss"
 
-moment.updateLocale("de", localization)
+
+dayjs.locale('de')
+// import localization from "moment/locale/de"
+
+
+// moment.updateLocale("de", localization)
 
 export const TimetableChild = ({ summary, start, end, uid }) => {
   const TCDate = () =>
     <div className="timetable__child__date">
-      {moment(start).format("HH:mm")}
+      {dayjs(start).format("HH:mm")}
       <WaveIcon className="timetable__child__date__icon"/>
-      {moment(end).format("HH:mm")}
+      {dayjs(end).format("HH:mm")}
     </div>
 
   const TCSummary = () =>

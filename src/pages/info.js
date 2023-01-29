@@ -1,5 +1,6 @@
 import React from "react"
-import moment from "moment"
+//import moment from "moment"
+import dayjs from "dayjs"
 import Layout from "../layout"
 import Container from "../components/container"
 import CodeOfConduct from "../components/code-of-conduct"
@@ -8,7 +9,7 @@ import Contact from "../components/contact"
 import Headline from "../components/headline"
 
 const ContactPage = () => {
-  const currentHour = parseFloat(moment().format("HH"))
+  const currentHour = parseFloat(dayjs().format("HH"))
   const isNight = currentHour > 18 || currentHour < 7
 
   return (

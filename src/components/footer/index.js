@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import NavigationFooter from './../navigation/nav-footer';
 import Container from './../container';
-import LogoDark from '../logo/logo-dark';
+//import LogoDark from '../logo/logo-dark';
 
 import './footer.scss';
 import useAllStaticLinks from './footer-hook-use-all-static-links';

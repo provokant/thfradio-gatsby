@@ -6,6 +6,7 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "autoprefixer": "^9.6.1",
+    "dayjs": "^1.11.7",
     "dotenv": "^8.2.0",
     "envfile": "^5.0.0",
     "gatsby": "^2.15.18",

@@ -1,5 +1,4 @@
 import React from 'react';
-import moment from 'moment';
 import Container from './../components/container';
 import Section from './../components/section';
 import SEO from './../components/seo';

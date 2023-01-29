@@ -1,6 +1,8 @@
 import React, { useContext } from "react"
 import Img from "gatsby-image"
-import moment from "moment"
+//import moment from "moment"
+import dayjs from "dayjs"
+
 
 import { GlobalDispatchContext, GlobalStateContext, } from "../../context/global-context-provider"
 import PlayCircle from "../../images/play-circle.svg"
@@ -36,7 +38,7 @@ const ShowsChild = ({
         <div className="archive-child__content">
           <div className="archive-child__content__title">{name}</div>
           <div className="archive-child__content__date">
-            {moment(date).format("DD.MM.YYYY")}
+            {dayjs(date).format("DD.MM.YYYY")}
           </div>
         </div>
       </button>
