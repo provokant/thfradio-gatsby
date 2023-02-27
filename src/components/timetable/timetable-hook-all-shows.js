@@ -1,13 +1,20 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import { groupBy } from 'lodash';
-import moment from 'moment';
+import { graphql, useStaticQuery } from "gatsby"
+import { groupBy } from "lodash"
+import dayjs from "dayjs"
+import 'dayjs/locale/en-us'
 
-moment.locale('en');
+var isSameOrAfter = require('dayjs/plugin/isSameOrAfter')
+var isBetween = require('dayjs/plugin/isBetween')
+
+
+dayjs.locale('en-us')
+dayjs.extend(isSameOrAfter)
+dayjs.extend(isBetween)
 
 export const useAllShows = () => {
-  const startOfToday = moment().startOf('day');
-  const startOfThisWeek = moment().startOf('isoWeek');
-  const endOfNextWeek = moment().add(1, 'weeks').endOf('isoWeek');
+  const startOfToday = dayjs().startOf('day')
+  const startOfThisWeek = dayjs().startOf('isoWeek')
+  const endOfNextWeek = dayjs().add(1, 'weeks').endOf('isoWeek')
 
   const { allIcal } = useStaticQuery(graphql`
     {
@@ -26,38 +33,36 @@ export const useAllShows = () => {
     }
   `);
 
-  // keeping this in comments in case team up shifts times again
-  // let showsAll;
-  // moment().isDST()
-  //  ? showsAll = allIcal.showsAll.map(x=>({...x, start:moment(x.start).add(!isNull(x.rrule)?0:moment().utcOffset(),'m'), end:moment(x.end).add(!isNull(x.rrule)?0:moment().utcOffset(),'m')}))
-  //  : {showsAll}=allIcal
 
-  let { showsAll } = allIcal;
+let {showsAll} =  allIcal 
 
   const allGroupedWeekdays = groupBy(showsAll, ({ start }) =>
-    moment(start).startOf('day')
-  );
+    dayjs(start).startOf('day')
+  )
   const allUpcoming = showsAll.filter(({ start }) =>
-    moment(start).isSameOrAfter(startOfToday)
-  );
+    dayjs(start).isSameOrAfter(startOfToday)
+  )
   const weekdaysAllUpcoming = groupBy(allUpcoming, ({ start }) =>
-    moment(start).startOf('day')
-  );
+    dayjs(start).startOf('day')
+  )
   const allThisAndNextWeek = showsAll.filter(({ start }) =>
-    moment(start).isBetween(startOfThisWeek, endOfNextWeek)
-  );
+    dayjs(start).isBetween(
+      startOfThisWeek,
+      endOfNextWeek
+    )
+  )
   const weekdaysThisAndNextWeek = groupBy(allThisAndNextWeek, ({ start }) =>
-    moment(start).startOf('day').toISOString()
-  );
+    dayjs(start).startOf('day').toISOString()
+  ) 
 
   const nowPlaying = allUpcoming.find(({ start, end }) =>
-    moment().isBetween(start, end)
-  );
+    dayjs().isBetween(start, end)
+  )
   const nextPlaying = allUpcoming
-    .filter(({ start }) => moment().diff(start) < 0)
+    .filter(({ start }) => dayjs().diff(start, 'day') < 0)
     .sort((a, b) => {
-      return moment().diff(moment(b.start)) - moment().diff(moment(a.start));
-    })[0];
+      return dayjs().diff(dayjs(b.start, 'day')) - dayjs().diff(dayjs(a.start,'day'))
+    })[0]
 
   return {
     showsAll,

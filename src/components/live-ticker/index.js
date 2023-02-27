@@ -1,13 +1,14 @@
-import React from 'react';
-import moment from 'moment';
-import localization from 'moment/locale/en';
-import Marquee from 'react-marquee-double';
+import React from "react"
+import dayjs from "dayjs"
+import 'dayjs/locale/en-us'
+import Marquee from "react-marquee-double"
 
 import useAllShows from '../timetable/timetable-hook-all-shows';
 
 import './live-ticker.scss';
 
-moment.updateLocale('en-us', localization);
+
+dayjs.locale('en-us')
 
 export const LiveTicker = () => {
   const { nowPlaying, nextPlaying } = useAllShows();
@@ -16,23 +17,19 @@ export const LiveTicker = () => {
     ? `
       LIVE FROM AIRPORT BERLIN <b><i>NOW:&nbsp;&nbsp;&nbsp;&nbsp;</i></b>
       <i>${nowPlaying.summary}
-      ${moment(nowPlaying.start).format('HH:mm')}-${moment(
-        nowPlaying.end
-      ).format('HH:mm')}
+      ${dayjs(nowPlaying.start).format("HH:mm")}-${dayjs(nowPlaying.end).format("HH:mm")}
       &nbsp;&nbsp;&nbsp;&nbsp;
       <b>next show:</b>
       ${nextPlaying.summary}
-      ${moment(nextPlaying.start).format('HH:mm')}-${moment(
-        nextPlaying.end
-      ).format('HH:mm')}
+      ${dayjs(nextPlaying.start).format("HH:mm")}-${dayjs(nextPlaying.end).format("HH:mm")}
       </i>
     `
     : `
-      <b>NOW PLAYING THF RADIO ARCHIVE</b> – <b>next show</b>
+      <b>NOW PLAYING THF RADIO ARCHIVE</b> - <b>next show</b>
       on
-      ${moment(nextPlaying.start).format('dddd, HH:mm')}
+      ${dayjs(nextPlaying.start).format("dddd, HH:mm")}
       <i>${nextPlaying.summary}</i>
-      –
+      -
     `;
 
   return (

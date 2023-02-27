@@ -1,5 +1,6 @@
 import React from "react"
-import moment from "moment"
+//import moment from "moment"
+import dayjs from "dayjs"
 
 import SEO from "./../components/seo"
 import Archive from "../components/archive"
@@ -8,7 +9,7 @@ import Layout from "../layout"
 import Timetable from "../components/timetable"
 
 const IndexTemplate = () => {
-  const currentHour = parseFloat(moment().format("HH"))
+  const currentHour = parseFloat(dayjs().format("HH"))
   const isNight = currentHour > 18 || currentHour < 7
 
   return (
