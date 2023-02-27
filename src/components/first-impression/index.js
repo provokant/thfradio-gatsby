@@ -15,18 +15,18 @@ export const FirstImpression = () => {
 
   return (
     <Section
-      title="first impression"
-      id="first-impression"
-      className="first-impression"
+      title='first impression'
+      id='first-impression'
+      className='first-impression'
     >
       <BackgroundImage
-        Tag="section"
-        id="first-impression"
-        className="first-impression__mobile"
+        Tag='section'
+        id='first-impression'
+        className='first-impression__mobile'
         fluid={imageDefault.childImageSharp.fluid}
       >
         <Container>
-          <div className="first-impression__mobile__claim">
+          <div className='first-impression__mobile__claim'>
             <div>
               <p>
                 We are a community radio station at the gatehouse of Tempelhof
@@ -36,10 +36,10 @@ export const FirstImpression = () => {
               <p>
                 We are part of{' '}
                 <a
-                  href="https://www.mixcloud.com/THFRadio/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="opacity-70 hover:opacity-100"
+                  href='https://torhausberlin.de/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='opacity-70 hover:opacity-100'
                 >
                   Torhaus Berlin
                 </a>
@@ -50,8 +50,8 @@ export const FirstImpression = () => {
       </BackgroundImage>
 
       <Container>
-        <div className="first-impression__grid">
-          <div className="first-impression__grid__claim">
+        <div className='first-impression__grid'>
+          <div className='first-impression__grid__claim'>
             <div>
               <p>
                 We are a community radio station at the gatehouse of Tempelhof
@@ -61,10 +61,10 @@ export const FirstImpression = () => {
               <p>
                 We are part of{' '}
                 <a
-                  href="https://www.mixcloud.com/THFRadio/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="opacity-70 hover:opacity-100"
+                  href='https://www.mixcloud.com/THFRadio/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='opacity-70 hover:opacity-100'
                 >
                   Torhaus Berlin
                 </a>
@@ -74,16 +74,16 @@ export const FirstImpression = () => {
               </p> */}
             </div>
           </div>
-          <div className="first-impression__grid__picture">
+          <div className='first-impression__grid__picture'>
             <Img
               fluid={gridImage.childImageSharp.fluid}
-              alt="THF Radio, Torhaus Berlin"
+              alt='THF Radio, Torhaus Berlin'
             />
           </div>
-          <ButtonLink title="Über uns" path="/info">
+          <ButtonLink title='Über uns' path='/info'>
             <span>About us</span>
           </ButtonLink>
-          <ButtonLink title="Aus dem Archiv" path="/#shows">
+          <ButtonLink title='Aus dem Archiv' path='/#shows'>
             <span>Listen to the shows</span>
           </ButtonLink>
         </div>

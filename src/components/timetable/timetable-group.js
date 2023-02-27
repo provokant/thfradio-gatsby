@@ -1,20 +1,19 @@
 import React from "react"
-//import moment from "moment"
 import dayjs from "dayjs"
-//import localization from "moment/locale/de"
-
 import 'dayjs/locale/de'
 
-import "./timetable.scss"
-import TimetableChildren from "./timetable-children"
+import './timetable.scss';
+import TimetableChildren from './timetable-children';
 
-//moment.updateLocale("en-us", localization)
-dayjs.locale('de')
+dayjs.locale('en-us')
 
 
-export const TimetableGrouped = ({ by }) => by &&
+export const TimetableGrouped = ({ by }) =>
+  by &&
   Object.entries(by).map(([date, shows], i) => (
-      <div role="presentation" className={`
+    <div
+      role='presentation'
+      className={`
       timetable__group
       ${dayjs().diff(dayjs(date), "week") % 2 !== 0 ? " --variant" : ""}
       ${dayjs().diff(dayjs(date), "day") > 0 ? " --passed" : ""}
@@ -31,14 +30,14 @@ export const TimetableGroupTitlePrefix = ({ date }) => {
 
   return (
     <>
-      {diffDays > 0 && "Last "}
-      {(diffWeeks === 0 && diffDays <= 0) && " "}
-      {diffWeeks === -1 && " "}
-      {diffWeeks === -2 && " "}
-      {diffWeeks < -2 && " "}
+      {diffDays > 0 && 'Last '}
+      {diffWeeks === 0 && diffDays <= 0 && ' '}
+      {diffWeeks === -1 && ' '}
+      {diffWeeks === -2 && ' '}
+      {diffWeeks < -2 && ' '}
     </>
-  )
-}
+  );
+};
 
 export const TimetableGroupTitleWeekday = ({ date }) => (
   <strong>{dayjs(date).format("dddd")}</strong>
@@ -50,7 +49,7 @@ export const TimetableGroupTitleSuffix = ({ date }) => (
   </>
 )
 
-export const TimetableGroupTitle = ({ date }) =>
+export const TimetableGroupTitle = ({ date }) => (
   <div className="timetable__group__title">
     <div className="timetable__group__title__dom">
       <TimetableGroupTitlePrefix date={date}/>
@@ -62,5 +61,6 @@ export const TimetableGroupTitle = ({ date }) =>
       {dayjs(date).format("DD.MM.YYYY")}
     </div>
   </div>
+);
 
-export default TimetableGrouped
+export default TimetableGrouped;

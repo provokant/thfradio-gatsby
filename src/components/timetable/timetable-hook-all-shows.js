@@ -1,15 +1,13 @@
 import { graphql, useStaticQuery } from "gatsby"
 import { groupBy } from "lodash"
-//import moment from "moment"
 import dayjs from "dayjs"
-import 'dayjs/locale/de'
+import 'dayjs/locale/en-us'
 
 var isSameOrAfter = require('dayjs/plugin/isSameOrAfter')
 var isBetween = require('dayjs/plugin/isBetween')
 
 
-//moment.locale('de')
-dayjs.locale('de')
+dayjs.locale('en-us')
 dayjs.extend(isSameOrAfter)
 dayjs.extend(isBetween)
 
@@ -33,7 +31,7 @@ export const useAllShows = () => {
         }
       }
     }
-  `)
+  `);
 
 
 let {showsAll} =  allIcal 
@@ -73,16 +71,8 @@ let {showsAll} =  allIcal
     weekdaysAllUpcoming,
     weekdaysThisAndNextWeek,
     nowPlaying,
-    nextPlaying
-  }
-}
+    nextPlaying,
+  };
+};
 
-export default useAllShows
-
-
-
-
-
-
-
-
+export default useAllShows;
