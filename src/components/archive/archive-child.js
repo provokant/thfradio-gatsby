@@ -1,6 +1,5 @@
 import React, { useContext } from "react"
 import Img from "gatsby-image"
-//import moment from "moment"
 import dayjs from "dayjs"
 
 import { GlobalDispatchContext, GlobalStateContext, } from "../../context/global-context-provider"

@@ -1,11 +1,11 @@
 import React from "react"
 import dayjs from "dayjs"
-import 'dayjs/locale/de'
+import 'dayjs/locale/en'
 
 import './timetable.scss';
 import TimetableChildren from './timetable-children';
 
-dayjs.locale('en-us')
+dayjs.locale('en')
 
 
 export const TimetableGrouped = ({ by }) =>

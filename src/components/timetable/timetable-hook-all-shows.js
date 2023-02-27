@@ -1,13 +1,13 @@
 import { graphql, useStaticQuery } from "gatsby"
 import { groupBy } from "lodash"
 import dayjs from "dayjs"
-import 'dayjs/locale/en-us'
+import 'dayjs/locale/en'
 
 var isSameOrAfter = require('dayjs/plugin/isSameOrAfter')
 var isBetween = require('dayjs/plugin/isBetween')
 
 
-dayjs.locale('en-us')
+dayjs.locale('en')
 dayjs.extend(isSameOrAfter)
 dayjs.extend(isBetween)
 

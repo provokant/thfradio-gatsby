@@ -1,10 +1,7 @@
 import React from "react"
 import dayjs from "dayjs"
 import WaveIcon from "../../images/wave.svg"
-import 'dayjs/locale/de'
 import "./timetable.scss"
-
-
 
 
 

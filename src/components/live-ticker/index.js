@@ -1,6 +1,6 @@
 import React from "react"
 import dayjs from "dayjs"
-import 'dayjs/locale/en-us'
+import 'dayjs/locale/en'
 import Marquee from "react-marquee-double"
 
 import useAllShows from '../timetable/timetable-hook-all-shows';
@@ -8,7 +8,7 @@ import useAllShows from '../timetable/timetable-hook-all-shows';
 import './live-ticker.scss';
 
 
-dayjs.locale('en-us')
+dayjs.locale('en')
 
 export const LiveTicker = () => {
   const { nowPlaying, nextPlaying } = useAllShows();
