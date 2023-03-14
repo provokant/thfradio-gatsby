@@ -61,7 +61,7 @@ export const FirstImpression = () => {
               <p>
                 We are part of{' '}
                 <a
-                  href='https://www.mixcloud.com/THFRadio/'
+                  href='https://torhausberlin.de/'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='opacity-70 hover:opacity-100'
