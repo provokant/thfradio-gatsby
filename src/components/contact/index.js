@@ -29,18 +29,24 @@ const Contact = () => {
         </a>
       </div>
 
-      <Paragraph text='Interested in playing a one-off radio show or having a residency at THF Radio (or to join our community radio and association)? Please fill out the following form, we will come back to you. Please do not write mails.' />
+      <Paragraph text='Interested in playing a one-off radio show or having a residency at THF Radio (or to join our community radio and association)? Please fill out the following form, we will come back to you. Please do not write mails. If you are interested in journalistic formats, please also consider applying for THF Feature using the respective form.' />
 
       <div className='contact__german'>
         Hast du Interesse an einer einmaligen Radiosendung oder einer Residency
         bei THF Radio (oder an einer Mitgliedschaft in unserem Community Radio
         und Verein)? Füll bitte das folgende Formular aus, dann kommen wir
-        schnellstmöglich auf dich zurück. Bitte schreibt uns keine Mails.
+        schnellstmöglich auf dich zurück. Bitte schreibt uns keine Mails. 
+        Falls du Interesse an journalistischen Formaten hast, kannst du dich auch bei THF Feature bewerben.
       </div>
       <div className='contact__link'>
         <div>
           <a href='https://forms.gle/eJsPSY5AZDMDKmpA9' target='_blank'>
-            Form
+          Application Form   
+          </a>
+        </div>
+        <div>
+          <a href='https://forms.gle/4xvhzUM4ZXcf52eZ7' target='_blank'>
+          THF Feature Form
           </a>
         </div>
       </div>
