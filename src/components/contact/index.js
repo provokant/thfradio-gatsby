@@ -54,7 +54,7 @@ const Contact = () => {
                   className='opacity-70 hover:opacity-100'
                 >
                   THF Feature
-                </a>.
+                </a> bewerben.
       </div>
       <div className='contact__link'>
         <div>
