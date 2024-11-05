@@ -89,7 +89,7 @@ const plugins = [
     resolve: `gatsby-source-ical`,
     options: {
       name: `events`,
-      url: `https://ics.teamup.com/feed/ksyt64me39ssy5e2ko/7027389.ics`,
+      url: ``,
     },
   },
   {
